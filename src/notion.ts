@@ -6,7 +6,10 @@ import {
   CreatePageParameters,
   UpdatePageParameters,
   UpdateBlockParameters,
-  GetDatabaseResponse
+  GetDatabaseResponse,
+  QueryDatabaseResponse,
+  DatabaseObjectResponse,
+  PageObjectResponse
 } from '@notionhq/client/build/src/api-endpoints'
 
 // Types AREA
@@ -69,55 +72,67 @@ const retrieveDatabase = async (
   outType: OutputType = 'normal'
 ) => {
   try {
-    const response = await client.databases.retrieve({ 
+    // 데이터베이스 메타데이터 조회
+    const metadata = await client.databases.retrieve({ 
       database_id: databaseId.replace(/^\//, '')
-    }) as GetDatabaseResponse
+    }) as DatabaseObjectResponse;
+
+    // 데이터베이스 내용 조회
+    const response = await client.databases.query({
+      database_id: databaseId.replace(/^\//, ''),
+      page_size: 100  // 필요한 경우 조정
+    }) as QueryDatabaseResponse;
 
     if (outType === 'flatten') {
       const flatData: Record<string, any> = {
-        id: response.id,
-        ...flatten(response.properties, true)
+        id: metadata.id
+      };
+
+      // 메타데이터에서 제목 추출
+      if ('title' in metadata) {
+        flatData.title = metadata.title[0]?.plain_text || '';
       }
 
       // 기본 메타데이터 추가
-      if ('title' in response) {
-        flatData.title = response.title?.[0]?.plain_text || ''
-      }
-      if ('created_time' in response) {
-        flatData.created_time = response.created_time
-      }
-      if ('last_edited_time' in response) {
-        flatData.last_edited_time = response.last_edited_time
-      }
-      if ('url' in response) {
-        flatData.url = response.url
-      }
+      flatData.created_time = metadata.created_time;
+      flatData.last_edited_time = metadata.last_edited_time;
+      flatData.url = metadata.url;
 
       // 부모 정보 추가
-      if ('parent' in response && response.parent) {
-        if ('page_id' in response.parent) {
-          flatData.parent_id = response.parent.page_id
-        }
-        flatData.parent_type = response.parent.type
+      if ('parent' in metadata && metadata.parent.type === 'page_id') {
+        flatData.parent_id = metadata.parent.page_id;
+        flatData.parent_type = metadata.parent.type;
       }
 
       // 생성자/수정자 정보 추가
-      if ('created_by' in response && response.created_by) {
-        flatData.created_by = response.created_by.id
+      if ('created_by' in metadata) {
+        flatData.created_by = metadata.created_by.id;
       }
-      if ('last_edited_by' in response && response.last_edited_by) {
-        flatData.last_edited_by = response.last_edited_by.id
+      if ('last_edited_by' in metadata) {
+        flatData.last_edited_by = metadata.last_edited_by.id;
       }
 
-      return flatData
+      // 첫 번째 페이지의 properties를 사용
+      if (response.results.length > 0) {
+        const firstPage = response.results[0] as PageObjectResponse;
+        if ('properties' in firstPage) {
+          const properties = flatten(firstPage.properties);
+          Object.assign(flatData, properties);
+        }
+      }
+
+      return flatData;
     }
 
-    return response
+    return {
+      metadata,
+      results: response.results
+    };
   } catch (error) {
-    console.error('데이터베이스 조회 실패:', error)
-    throw error
+    console.error('데이터베이스 조회 실패:', error);
+    throw error;
   }
-}
+};
 
 /**
  * 데이터베이스를 업데이트합니다
@@ -237,23 +252,38 @@ const flatten = (properties: any, isDatabase: boolean = false): Record<string, a
     // 데이터베이스의 properties인 경우
     if (isDatabase) {
       switch (value.type) {
+        case 'title':
+          result[key] = 'title';
+          break;
+        case 'rich_text':
+          result[key] = 'rich_text';
+          break;
         case 'select':
-          result[key] = value.select?.options?.[0]?.name || '';
+          // select 필드의 모든 옵션 값들을 쉼표로 구분하여 반환
+          result[key] = Array.isArray(value.select.options)
+            ? value.select.options.map((opt: any) => opt.name).join(', ')
+            : '';
           break;
         case 'multi_select':
-          result[key] = value.multi_select?.options?.map((opt: any) => opt.name).join(', ') || '';
+          // multi_select 필드의 모든 옵션 값들을 쉼표로 구분하여 반환
+          result[key] = Array.isArray(value.multi_select.options)
+            ? value.multi_select.options.map((opt: any) => opt.name).join(', ')
+            : '';
           break;
         case 'relation':
-          result[key] = value.relation?.database_id || '';
+          // relation 필드의 데이터베이스 ID 반환
+          result[key] = value.relation.database_id || '';
           break;
         case 'rollup':
-          result[key] = value.rollup?.function || '';
+          result[key] = value.rollup.function || '';
           break;
         case 'formula':
-          result[key] = value.formula?.expression || '';
+          result[key] = value.formula.expression || '';
+          break;
+        case 'dual_property':
+          result[key] = value.dual_property.database_id || '';
           break;
         default:
-          // 기본적으로 해당 필드의 타입을 저장
           result[key] = value.type || '';
       }
       return;

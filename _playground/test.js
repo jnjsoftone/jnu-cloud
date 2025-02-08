@@ -18,8 +18,9 @@ const client = createNotionClient({ auth: setting.token });
 //   }
 // })
 
-// 기본 형식으로 조회
-// const normalData = await retrieveDatabase(client, 'a71157c311c441e5bf1950d54a5f724f');
+// 데이터베이스 조회
+const database = await retrieveDatabase(client, 'a71157c311c441e5bf1950d54a5f724f', 'normal');
+console.log('Normal Data:', JSON.stringify(database, null, 2));
 
 // 평탄화된 형식으로 조회
 const flattenData = await retrieveDatabase(client, 'a71157c311c441e5bf1950d54a5f724f', 'flatten');
