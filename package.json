@@ -46,6 +46,8 @@
   },
   "dependencies": {
     "@notionhq/client": "^2.2.15",
+    "@supabase/supabase-js": "^2.48.1",
+    "airtable": "^0.12.2",
     "dotenv": "^16.4.7",
     "jnu-abc": "^0.0.12"
   },
