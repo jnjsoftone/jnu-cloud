@@ -21,6 +21,66 @@ interface QueryOptions {
   filters?: Array<{ column: string; operator: string; value: any }>;
 }
 
+interface GitHubAccount {
+  id?: string;
+  username: string;
+  fullName: string;
+  email: string;
+  token: string;
+  expired?: string;
+  created_at?: string;
+  updated_at?: string;
+}
+
+interface ColumnDefinition {
+  name: string;
+  type: string;
+  primaryKey?: boolean;
+  unique?: boolean;
+  nullable?: boolean;
+  defaultValue?: any;
+  foreignKey?: {
+    table: string;
+    column: string;
+    onDelete?: 'CASCADE' | 'SET NULL' | 'SET DEFAULT' | 'RESTRICT' | 'NO ACTION';
+    onUpdate?: 'CASCADE' | 'SET NULL' | 'SET DEFAULT' | 'RESTRICT' | 'NO ACTION';
+  };
+  check?: string;
+}
+
+interface TableSchema {
+  name: string;
+  columns: ColumnDefinition[];
+  indexes?: {
+    name: string;
+    columns: string[];
+    unique?: boolean;
+  }[];
+}
+
+interface TablePermissions {
+  select?: {
+    enabled: boolean;
+    roles: string[];
+    condition?: string;
+  };
+  insert?: {
+    enabled: boolean;
+    roles: string[];
+    condition?: string;
+  };
+  update?: {
+    enabled: boolean;
+    roles: string[];
+    condition?: string;
+  };
+  delete?: {
+    enabled: boolean;
+    roles: string[];
+    condition?: string;
+  };
+}
+
 // & Variables AREA
 // &---------------------------------------------------------------------------
 let supabase: SupabaseClient | null = null;
@@ -281,6 +341,184 @@ const subscribe = (table: string, callback: (payload: any) => void) => {
   return subscription;
 };
 
+// * GitHub Account Management
+/**
+ * GitHub 계정 목록 조회
+ */
+const getGitHubAccounts = async (options: QueryOptions = {}) => {
+  return await select('github_accounts', options);
+};
+
+/**
+ * GitHub 계정 단일 조회
+ */
+const getGitHubAccount = async (username: string) => {
+  const { data, error } = await getSupabase()
+    .from('github_accounts')
+    .select('*')
+    .eq('username', username)
+    .single();
+
+  if (error) throw error;
+  return data as GitHubAccount;
+};
+
+/**
+ * GitHub 계정 추가
+ */
+const createGitHubAccount = async (account: Omit<GitHubAccount, 'id' | 'created_at' | 'updated_at'>) => {
+  const { data, error } = await getSupabase()
+    .from('github_accounts')
+    .insert({
+      ...account,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
+    })
+    .select()
+    .single();
+
+  if (error) throw error;
+  return data as GitHubAccount;
+};
+
+/**
+ * GitHub 계정 수정
+ */
+const updateGitHubAccount = async (username: string, account: Partial<Omit<GitHubAccount, 'id' | 'username' | 'created_at' | 'updated_at'>>) => {
+  const { data, error } = await getSupabase()
+    .from('github_accounts')
+    .update({
+      ...account,
+      updated_at: new Date().toISOString()
+    })
+    .eq('username', username)
+    .select()
+    .single();
+
+  if (error) throw error;
+  return data as GitHubAccount;
+};
+
+/**
+ * GitHub 계정 삭제
+ */
+const deleteGitHubAccount = async (username: string) => {
+  const { error } = await getSupabase()
+    .from('github_accounts')
+    .delete()
+    .eq('username', username);
+
+  if (error) throw error;
+  return true;
+};
+
+/**
+ * GitHub 계정 일괄 업데이트
+ */
+const upsertGitHubAccounts = async (accounts: Omit<GitHubAccount, 'id' | 'created_at' | 'updated_at'>[]) => {
+  const now = new Date().toISOString();
+  const { data, error } = await getSupabase()
+    .from('github_accounts')
+    .upsert(
+      accounts.map(account => ({
+        ...account,
+        updated_at: now,
+        created_at: now
+      })),
+      {
+        onConflict: 'username',
+        ignoreDuplicates: false
+      }
+    )
+    .select();
+
+  if (error) throw error;
+  return data as GitHubAccount[];
+};
+
+// * Table Management
+/**
+ * SQL 쿼리 실행
+ */
+const executeSQL = async (query: string) => {
+  const { data, error } = await getSupabase()
+    .from('_sql')
+    .select('*')
+    .execute(query);
+  
+  if (error) throw error;
+  return data;
+};
+
+/**
+ * 테이블 생성
+ */
+const createTable = async (schema: TableSchema, permissions?: TablePermissions) => {
+  try {
+    // 테이블 생성 쿼리
+    let query = `CREATE TABLE IF NOT EXISTS ${schema.name} (\n`;
+    const columnDefinitions = schema.columns.map(column => {
+      let def = `  "${column.name}" ${column.type}`;
+      if (column.primaryKey) def += ' PRIMARY KEY';
+      if (column.unique) def += ' UNIQUE';
+      if (!column.nullable) def += ' NOT NULL';
+      if (column.defaultValue !== undefined) def += ` DEFAULT ${column.defaultValue}`;
+      if (column.check) def += ` CHECK (${column.check})`;
+      
+      if (column.foreignKey) {
+        def += ` REFERENCES ${column.foreignKey.table}(${column.foreignKey.column})`;
+        if (column.foreignKey.onDelete) def += ` ON DELETE ${column.foreignKey.onDelete}`;
+        if (column.foreignKey.onUpdate) def += ` ON UPDATE ${column.foreignKey.onUpdate}`;
+      }
+      return def;
+    });
+    
+    query += columnDefinitions.join(',\n');
+    query += '\n);';
+    
+    // 테이블 생성 실행
+    await executeSQL(query);
+    
+    // 인덱스 생성
+    if (schema.indexes) {
+      for (const index of schema.indexes) {
+        const indexQuery = `CREATE${index.unique ? ' UNIQUE' : ''} INDEX IF NOT EXISTS "${index.name}" ON ${schema.name} (${index.columns.map(col => `"${col}"`).join(', ')});`;
+        await executeSQL(indexQuery);
+      }
+    }
+    
+    // 권한 설정
+    if (permissions) {
+      const permissionQueries: string[] = [];
+      
+      // 각 권한 타입에 대한 쿼리 생성
+      ['select', 'insert', 'update', 'delete'].forEach(action => {
+        const perm = permissions[action as keyof TablePermissions];
+        if (perm?.enabled) {
+          perm.roles.forEach(role => {
+            let pQuery = `GRANT ${action.toUpperCase()} ON ${schema.name} TO "${role}"`;
+            if (perm.condition) {
+              pQuery += ` WITH CHECK (${perm.condition})`;
+            }
+            pQuery += ';';
+            permissionQueries.push(pQuery);
+          });
+        }
+      });
+      
+      // 권한 쿼리 실행
+      for (const pQuery of permissionQueries) {
+        await executeSQL(pQuery);
+      }
+    }
+    
+    return true;
+  } catch (error) {
+    console.error('테이블 생성 중 오류:', error);
+    throw error;
+  }
+};
+
 // & Export AREA
 // &---------------------------------------------------------------------------
 export {
@@ -307,8 +545,21 @@ export {
   loadJsonFromStorage,
   // Realtime
   subscribe,
+  // GitHub Account Management
+  getGitHubAccounts,
+  getGitHubAccount,
+  createGitHubAccount,
+  updateGitHubAccount,
+  deleteGitHubAccount,
+  upsertGitHubAccounts,
+  // Table Management
+  createTable,
   // Types
   type SupabaseConfig,
   type StorageOptions,
   type QueryOptions,
+  type GitHubAccount,
+  type TableSchema,
+  type ColumnDefinition,
+  type TablePermissions,
 };

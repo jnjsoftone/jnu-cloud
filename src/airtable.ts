@@ -126,10 +126,12 @@ const update = async <T extends FieldSet = FieldSet>(tableName: string, records:
 
   const results: Record<T>[] = [];
   for (const chunk of chunks) {
-    const updated = await table.update(chunk.map(r => ({
-      id: r.id,
+    const updateData = chunk.map(r => ({
+      id: r.id!,  // id가 반드시 있어야 함
       fields: r.fields,
-    })));
+    }));
+    
+    const updated = await table.update(updateData);
     results.push(...updated.map(record => ({
       id: record.id,
       fields: record.fields as T,
