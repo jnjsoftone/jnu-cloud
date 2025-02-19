@@ -1,6 +1,6 @@
 // Import AREA
-import { Client } from '@notionhq/client'
-import { 
+import { Client } from '@notionhq/client';
+import {
   CreateDatabaseParameters,
   UpdateDatabaseParameters,
   CreatePageParameters,
@@ -9,29 +9,32 @@ import {
   GetDatabaseResponse,
   QueryDatabaseResponse,
   DatabaseObjectResponse,
-  PageObjectResponse
-} from '@notionhq/client/build/src/api-endpoints'
+  PageObjectResponse,
+} from '@notionhq/client/build/src/api-endpoints';
 
 // Types AREA
 type NotionClientConfig = {
-  auth: string
-}
+  auth: string;
+};
 
-type OutputType = 'normal' | 'flatten'
+type OutputType = 'normal' | 'flatten';
 
 interface FlattenDatabase {
-  id: string
-  title: string
-  created_time: string
-  last_edited_time: string
-  url: string
-  properties: Record<string, {
-    id: string
-    name: string
-    type: string
-    [key: string]: any
-  }>
-  [key: string]: any
+  id: string;
+  title: string;
+  created_time: string;
+  last_edited_time: string;
+  url: string;
+  properties: Record<
+    string,
+    {
+      id: string;
+      name: string;
+      type: string;
+      [key: string]: any;
+    }
+  >;
+  [key: string]: any;
 }
 
 // Functions AREA
@@ -42,8 +45,8 @@ interface FlattenDatabase {
  * @returns Notion 클라이언트 인스턴스
  */
 const createNotionClient = (config: NotionClientConfig) => {
-  return new Client(config)
-}
+  return new Client(config);
+};
 
 // Database 관련 함수들
 /**
@@ -53,12 +56,12 @@ const createNotionClient = (config: NotionClientConfig) => {
  */
 const createDatabase = async (client: Client, params: CreateDatabaseParameters) => {
   try {
-    return await client.databases.create(params)
+    return await client.databases.create(params);
   } catch (error) {
-    console.error('데이터베이스 생성 실패:', error)
-    throw error
+    console.error('데이터베이스 생성 실패:', error);
+    throw error;
   }
-}
+};
 
 /**
  * 데이터베이스를 조회합니다
@@ -66,26 +69,22 @@ const createDatabase = async (client: Client, params: CreateDatabaseParameters) 
  * @param databaseId 데이터베이스 ID (UUID 형식의 문자열)
  * @param outType 출력 형식 ('normal' | 'flatten', 기본값: 'normal')
  */
-const retrieveDatabase = async (
-  client: Client, 
-  databaseId: string, 
-  outType: OutputType = 'normal'
-) => {
+const retrieveDatabase = async (client: Client, databaseId: string, outType: OutputType = 'normal') => {
   try {
     // 데이터베이스 메타데이터 조회
-    const metadata = await client.databases.retrieve({ 
-      database_id: databaseId.replace(/^\//, '')
-    }) as DatabaseObjectResponse;
+    const metadata = (await client.databases.retrieve({
+      database_id: databaseId.replace(/^\//, ''),
+    })) as DatabaseObjectResponse;
 
     // 데이터베이스 내용 조회
-    const response = await client.databases.query({
+    const response = (await client.databases.query({
       database_id: databaseId.replace(/^\//, ''),
-      page_size: 100  // 필요한 경우 조정
-    }) as QueryDatabaseResponse;
+      page_size: 100, // 필요한 경우 조정
+    })) as QueryDatabaseResponse;
 
     if (outType === 'flatten') {
       const flatData: Record<string, any> = {
-        id: metadata.id
+        id: metadata.id,
       };
 
       // 메타데이터에서 제목 추출
@@ -126,7 +125,7 @@ const retrieveDatabase = async (
 
     return {
       metadata,
-      results: response.results
+      results: response.results,
     };
   } catch (error) {
     console.error('데이터베이스 조회 실패:', error);
@@ -141,12 +140,12 @@ const retrieveDatabase = async (
  */
 const updateDatabase = async (client: Client, params: UpdateDatabaseParameters) => {
   try {
-    return await client.databases.update(params)
+    return await client.databases.update(params);
   } catch (error) {
-    console.error('데이터베이스 업데이트 실패:', error)
-    throw error
+    console.error('데이터베이스 업데이트 실패:', error);
+    throw error;
   }
-}
+};
 
 // Page 관련 함수들
 /**
@@ -156,12 +155,12 @@ const updateDatabase = async (client: Client, params: UpdateDatabaseParameters) 
  */
 const createPage = async (client: Client, params: CreatePageParameters) => {
   try {
-    return await client.pages.create(params)
+    return await client.pages.create(params);
   } catch (error) {
-    console.error('페이지 생성 실패:', error)
-    throw error
+    console.error('페이지 생성 실패:', error);
+    throw error;
   }
-}
+};
 
 /**
  * 페이지를 조회합니다
@@ -170,12 +169,12 @@ const createPage = async (client: Client, params: CreatePageParameters) => {
  */
 const retrievePage = async (client: Client, pageId: string) => {
   try {
-    return await client.pages.retrieve({ page_id: pageId })
+    return await client.pages.retrieve({ page_id: pageId });
   } catch (error) {
-    console.error('페이지 조회 실패:', error)
-    throw error
+    console.error('페이지 조회 실패:', error);
+    throw error;
   }
-}
+};
 
 /**
  * 페이지를 업데이트합니다
@@ -184,12 +183,12 @@ const retrievePage = async (client: Client, pageId: string) => {
  */
 const updatePage = async (client: Client, params: UpdatePageParameters) => {
   try {
-    return await client.pages.update(params)
+    return await client.pages.update(params);
   } catch (error) {
-    console.error('페이지 업데이트 실패:', error)
-    throw error
+    console.error('페이지 업데이트 실패:', error);
+    throw error;
   }
-}
+};
 
 // Block 관련 함수들
 /**
@@ -199,12 +198,12 @@ const updatePage = async (client: Client, params: UpdatePageParameters) => {
  */
 const retrieveBlock = async (client: Client, blockId: string) => {
   try {
-    return await client.blocks.retrieve({ block_id: blockId })
+    return await client.blocks.retrieve({ block_id: blockId });
   } catch (error) {
-    console.error('블록 조회 실패:', error)
-    throw error
+    console.error('블록 조회 실패:', error);
+    throw error;
   }
-}
+};
 
 /**
  * 블록을 업데이트합니다
@@ -213,12 +212,12 @@ const retrieveBlock = async (client: Client, blockId: string) => {
  */
 const updateBlock = async (client: Client, params: UpdateBlockParameters) => {
   try {
-    return await client.blocks.update(params)
+    return await client.blocks.update(params);
   } catch (error) {
-    console.error('블록 업데이트 실패:', error)
-    throw error
+    console.error('블록 업데이트 실패:', error);
+    throw error;
   }
-}
+};
 
 /**
  * 블록을 삭제합니다
@@ -227,12 +226,12 @@ const updateBlock = async (client: Client, params: UpdateBlockParameters) => {
  */
 const deleteBlock = async (client: Client, blockId: string) => {
   try {
-    return await client.blocks.delete({ block_id: blockId })
+    return await client.blocks.delete({ block_id: blockId });
   } catch (error) {
-    console.error('블록 삭제 실패:', error)
-    throw error
+    console.error('블록 삭제 실패:', error);
+    throw error;
   }
-}
+};
 
 /**
  * Notion 페이지의 properties를 평탄화된 객체로 변환합니다
@@ -322,17 +321,16 @@ const flatten = (properties: any, isDatabase: boolean = false): Record<string, a
         result[key] = value.url || '';
         break;
       case 'files':
-        result[key] = Array.isArray(value.files) 
-          ? value.files.map((file: any) => file.name).join(', ') 
-          : '';
+        result[key] = Array.isArray(value.files) ? value.files.map((file: any) => file.name).join(', ') : '';
         break;
       case 'relation':
-        result[key] = Array.isArray(value.relation) 
-          ? value.relation.map((rel: any) => rel.id).join(', ') 
-          : (value.relation?.id || '');
+        result[key] = Array.isArray(value.relation)
+          ? value.relation.map((rel: any) => rel.id).join(', ')
+          : value.relation?.id || '';
         break;
       case 'formula':
-        result[key] = value.formula?.string || value.formula?.number?.toString() || value.formula?.boolean?.toString() || '';
+        result[key] =
+          value.formula?.string || value.formula?.number?.toString() || value.formula?.boolean?.toString() || '';
         break;
       case 'rollup':
         result[key] = Array.isArray(value.rollup?.array)
@@ -367,6 +365,55 @@ const flatten = (properties: any, isDatabase: boolean = false): Record<string, a
   return result;
 };
 
+/**
+ * 전체 데이터베이스 목록을 조회합니다
+ * @param client Notion 클라이언트
+ * @param outType 출력 형식 ('normal' | 'flatten', 기본값: 'normal')
+ * @returns 데이터베이스 목록
+ */
+const listDatabases = async (client: Client, outType: OutputType = 'normal') => {
+  try {
+    const response = await client.search({
+      filter: {
+        property: 'object',
+        value: 'database',
+      },
+      page_size: 100, // 최대 100개까지 조회
+    });
+
+    if (outType === 'flatten') {
+      return response.results.map((database: any) => {
+        const flatData: Record<string, any> = {
+          id: database.id,
+          title: database.title?.[0]?.plain_text || '',
+          created_time: database.created_time,
+          last_edited_time: database.last_edited_time,
+          url: database.url,
+          properties: {},
+        };
+
+        // properties 정보 추가
+        if (database.properties) {
+          Object.entries(database.properties).forEach(([key, value]: [string, any]) => {
+            flatData.properties[key] = {
+              id: value.id,
+              name: key,
+              type: value.type,
+            };
+          });
+        }
+
+        return flatData;
+      }) as FlattenDatabase[];
+    }
+
+    return response.results;
+  } catch (error) {
+    console.error('데이터베이스 목록 조회 실패:', error);
+    throw error;
+  }
+};
+
 // Export AREA
 export {
   createNotionClient,
@@ -379,5 +426,6 @@ export {
   retrieveBlock,
   updateBlock,
   deleteBlock,
-  flatten
-}
+  flatten,
+  listDatabases,
+};

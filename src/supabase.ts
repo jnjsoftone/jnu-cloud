@@ -111,9 +111,7 @@ const getSupabase = () => {
  */
 const select = async (table: string, options: QueryOptions = {}) => {
   const { page = 1, limit = 10, orderBy, filters } = options;
-  let query = getSupabase()
-    .from(table)
-    .select('*');
+  let query = getSupabase().from(table).select('*');
 
   // 필터 적용
   if (filters) {
@@ -143,11 +141,7 @@ const select = async (table: string, options: QueryOptions = {}) => {
  * 단일 데이터 조회
  */
 const selectOne = async (table: string, id: string | number) => {
-  const { data, error } = await getSupabase()
-    .from(table)
-    .select('*')
-    .eq('id', id)
-    .single();
+  const { data, error } = await getSupabase().from(table).select('*').eq('id', id).single();
 
   if (error) throw error;
   return data;
@@ -157,10 +151,7 @@ const selectOne = async (table: string, id: string | number) => {
  * 데이터 삽입
  */
 const insert = async (table: string, data: any) => {
-  const { data: result, error } = await getSupabase()
-    .from(table)
-    .insert(data)
-    .select();
+  const { data: result, error } = await getSupabase().from(table).insert(data).select();
 
   if (error) throw error;
   return result;
@@ -170,11 +161,7 @@ const insert = async (table: string, data: any) => {
  * 데이터 수정
  */
 const update = async (table: string, id: string | number, data: any) => {
-  const { data: result, error } = await getSupabase()
-    .from(table)
-    .update(data)
-    .eq('id', id)
-    .select();
+  const { data: result, error } = await getSupabase().from(table).update(data).eq('id', id).select();
 
   if (error) throw error;
   return result;
@@ -184,10 +171,7 @@ const update = async (table: string, id: string | number, data: any) => {
  * 데이터 삭제
  */
 const remove = async (table: string, id: string | number) => {
-  const { error } = await getSupabase()
-    .from(table)
-    .delete()
-    .eq('id', id);
+  const { error } = await getSupabase().from(table).delete().eq('id', id);
 
   if (error) throw error;
   return true;
@@ -246,7 +230,10 @@ const signOut = async () => {
  * 현재 사용자 정보 가져오기
  */
 const getCurrentUser = async () => {
-  const { data: { user }, error } = await getSupabase().auth.getUser();
+  const {
+    data: { user },
+    error,
+  } = await getSupabase().auth.getUser();
   if (error) throw error;
   return user;
 };
@@ -257,8 +244,7 @@ const getCurrentUser = async () => {
  */
 const uploadFile = async (bucket: string, path: string, file: File | Blob | Buffer, options: StorageOptions = {}) => {
   const { data, error } = await getSupabase()
-    .storage
-    .from(bucket)
+    .storage.from(bucket)
     .upload(path, file, {
       upsert: options.upsert ?? false,
       cacheControl: options.cacheControl ?? '3600',
@@ -272,10 +258,7 @@ const uploadFile = async (bucket: string, path: string, file: File | Blob | Buff
  * 파일 다운로드
  */
 const downloadFile = async (bucket: string, path: string) => {
-  const { data, error } = await getSupabase()
-    .storage
-    .from(bucket)
-    .download(path);
+  const { data, error } = await getSupabase().storage.from(bucket).download(path);
 
   if (error) throw error;
   return data;
@@ -285,10 +268,7 @@ const downloadFile = async (bucket: string, path: string) => {
  * 파일 삭제
  */
 const deleteFile = async (bucket: string, path: string) => {
-  const { error } = await getSupabase()
-    .storage
-    .from(bucket)
-    .remove([path]);
+  const { error } = await getSupabase().storage.from(bucket).remove([path]);
 
   if (error) throw error;
   return true;
@@ -298,10 +278,7 @@ const deleteFile = async (bucket: string, path: string) => {
  * 파일 목록 조회
  */
 const listFiles = async (bucket: string, path: string = '') => {
-  const { data, error } = await getSupabase()
-    .storage
-    .from(bucket)
-    .list(path);
+  const { data, error } = await getSupabase().storage.from(bucket).list(path);
 
   if (error) throw error;
   return data;
@@ -331,11 +308,7 @@ const loadJsonFromStorage = async (bucket: string, path: string) => {
 const subscribe = (table: string, callback: (payload: any) => void) => {
   const subscription = getSupabase()
     .channel(`${table}-changes`)
-    .on(
-      'postgres_changes',
-      { event: '*', schema: 'public', table },
-      (payload) => callback(payload)
-    )
+    .on('postgres_changes', { event: '*', schema: 'public', table }, (payload) => callback(payload))
     .subscribe();
 
   return subscription;
@@ -353,11 +326,7 @@ const getGitHubAccounts = async (options: QueryOptions = {}) => {
  * GitHub 계정 단일 조회
  */
 const getGitHubAccount = async (username: string) => {
-  const { data, error } = await getSupabase()
-    .from('github_accounts')
-    .select('*')
-    .eq('username', username)
-    .single();
+  const { data, error } = await getSupabase().from('github_accounts').select('*').eq('username', username).single();
 
   if (error) throw error;
   return data as GitHubAccount;
@@ -372,7 +341,7 @@ const createGitHubAccount = async (account: Omit<GitHubAccount, 'id' | 'created_
     .insert({
       ...account,
       created_at: new Date().toISOString(),
-      updated_at: new Date().toISOString()
+      updated_at: new Date().toISOString(),
     })
     .select()
     .single();
@@ -384,12 +353,15 @@ const createGitHubAccount = async (account: Omit<GitHubAccount, 'id' | 'created_
 /**
  * GitHub 계정 수정
  */
-const updateGitHubAccount = async (username: string, account: Partial<Omit<GitHubAccount, 'id' | 'username' | 'created_at' | 'updated_at'>>) => {
+const updateGitHubAccount = async (
+  username: string,
+  account: Partial<Omit<GitHubAccount, 'id' | 'username' | 'created_at' | 'updated_at'>>
+) => {
   const { data, error } = await getSupabase()
     .from('github_accounts')
     .update({
       ...account,
-      updated_at: new Date().toISOString()
+      updated_at: new Date().toISOString(),
     })
     .eq('username', username)
     .select()
@@ -403,10 +375,7 @@ const updateGitHubAccount = async (username: string, account: Partial<Omit<GitHu
  * GitHub 계정 삭제
  */
 const deleteGitHubAccount = async (username: string) => {
-  const { error } = await getSupabase()
-    .from('github_accounts')
-    .delete()
-    .eq('username', username);
+  const { error } = await getSupabase().from('github_accounts').delete().eq('username', username);
 
   if (error) throw error;
   return true;
@@ -420,14 +389,14 @@ const upsertGitHubAccounts = async (accounts: Omit<GitHubAccount, 'id' | 'create
   const { data, error } = await getSupabase()
     .from('github_accounts')
     .upsert(
-      accounts.map(account => ({
+      accounts.map((account) => ({
         ...account,
         updated_at: now,
-        created_at: now
+        created_at: now,
       })),
       {
         onConflict: 'username',
-        ignoreDuplicates: false
+        ignoreDuplicates: false,
       }
     )
     .select();
@@ -441,82 +410,68 @@ const upsertGitHubAccounts = async (accounts: Omit<GitHubAccount, 'id' | 'create
  * SQL 쿼리 실행
  */
 const executeSQL = async (query: string) => {
-  const { data, error } = await getSupabase()
-    .from('_sql')
-    .select('*')
-    .execute(query);
-  
+  const { data, error } = await getSupabase().rpc('execute_sql', { query_string: query });
+
   if (error) throw error;
   return data;
 };
 
 /**
- * 테이블 생성
+ * 테이블 생성을 위한 SQL 쿼리 문자열 생성
  */
-const createTable = async (schema: TableSchema, permissions?: TablePermissions) => {
-  try {
-    // 테이블 생성 쿼리
-    let query = `CREATE TABLE IF NOT EXISTS ${schema.name} (\n`;
-    const columnDefinitions = schema.columns.map(column => {
-      let def = `  "${column.name}" ${column.type}`;
-      if (column.primaryKey) def += ' PRIMARY KEY';
-      if (column.unique) def += ' UNIQUE';
-      if (!column.nullable) def += ' NOT NULL';
-      if (column.defaultValue !== undefined) def += ` DEFAULT ${column.defaultValue}`;
-      if (column.check) def += ` CHECK (${column.check})`;
-      
-      if (column.foreignKey) {
-        def += ` REFERENCES ${column.foreignKey.table}(${column.foreignKey.column})`;
-        if (column.foreignKey.onDelete) def += ` ON DELETE ${column.foreignKey.onDelete}`;
-        if (column.foreignKey.onUpdate) def += ` ON UPDATE ${column.foreignKey.onUpdate}`;
-      }
-      return def;
-    });
-    
-    query += columnDefinitions.join(',\n');
-    query += '\n);';
-    
-    // 테이블 생성 실행
-    await executeSQL(query);
-    
-    // 인덱스 생성
-    if (schema.indexes) {
-      for (const index of schema.indexes) {
-        const indexQuery = `CREATE${index.unique ? ' UNIQUE' : ''} INDEX IF NOT EXISTS "${index.name}" ON ${schema.name} (${index.columns.map(col => `"${col}"`).join(', ')});`;
-        await executeSQL(indexQuery);
-      }
+const sqlCreateTable = (schema: TableSchema, permissions?: TablePermissions): string[] => {
+  const queries: string[] = [];
+
+  // 테이블 생성 쿼리
+  let query = `CREATE TABLE IF NOT EXISTS ${schema.name} (\n`;
+  const columnDefinitions = schema.columns.map((column) => {
+    let def = `  "${column.name}" ${column.type}`;
+    if (column.primaryKey) def += ' PRIMARY KEY';
+    if (column.unique) def += ' UNIQUE';
+    if (!column.nullable) def += ' NOT NULL';
+    if (column.defaultValue !== undefined) def += ` DEFAULT ${column.defaultValue}`;
+    if (column.check) def += ` CHECK (${column.check})`;
+
+    if (column.foreignKey) {
+      def += ` REFERENCES ${column.foreignKey.table}(${column.foreignKey.column})`;
+      if (column.foreignKey.onDelete) def += ` ON DELETE ${column.foreignKey.onDelete}`;
+      if (column.foreignKey.onUpdate) def += ` ON UPDATE ${column.foreignKey.onUpdate}`;
     }
-    
-    // 권한 설정
-    if (permissions) {
-      const permissionQueries: string[] = [];
-      
-      // 각 권한 타입에 대한 쿼리 생성
-      ['select', 'insert', 'update', 'delete'].forEach(action => {
-        const perm = permissions[action as keyof TablePermissions];
-        if (perm?.enabled) {
-          perm.roles.forEach(role => {
-            let pQuery = `GRANT ${action.toUpperCase()} ON ${schema.name} TO "${role}"`;
-            if (perm.condition) {
-              pQuery += ` WITH CHECK (${perm.condition})`;
-            }
-            pQuery += ';';
-            permissionQueries.push(pQuery);
-          });
-        }
-      });
-      
-      // 권한 쿼리 실행
-      for (const pQuery of permissionQueries) {
-        await executeSQL(pQuery);
-      }
+    return def;
+  });
+
+  query += columnDefinitions.join(',\n');
+  query += '\n);';
+  queries.push(query);
+
+  // 인덱스 생성 쿼리
+  if (schema.indexes) {
+    for (const index of schema.indexes) {
+      const indexQuery = `CREATE${index.unique ? ' UNIQUE' : ''} INDEX IF NOT EXISTS "${index.name}" ON ${
+        schema.name
+      } (${index.columns.map((col) => `"${col}"`).join(', ')});`;
+      queries.push(indexQuery);
     }
-    
-    return true;
-  } catch (error) {
-    console.error('테이블 생성 중 오류:', error);
-    throw error;
   }
+
+  // 권한 설정 쿼리
+  if (permissions) {
+    ['select', 'insert', 'update', 'delete'].forEach((action) => {
+      const perm = permissions[action as keyof TablePermissions];
+      if (perm?.enabled) {
+        perm.roles.forEach((role) => {
+          let pQuery = `GRANT ${action.toUpperCase()} ON ${schema.name} TO "${role}"`;
+          if (perm.condition) {
+            pQuery += ` WITH CHECK (${perm.condition})`;
+          }
+          pQuery += ';';
+          queries.push(pQuery);
+        });
+      }
+    });
+  }
+
+  return queries;
 };
 
 // & Export AREA
@@ -553,7 +508,7 @@ export {
   deleteGitHubAccount,
   upsertGitHubAccounts,
   // Table Management
-  createTable,
+  sqlCreateTable,
   // Types
   type SupabaseConfig,
   type StorageOptions,

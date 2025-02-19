@@ -195,8 +195,8 @@ declare const deleteGitHubAccount: (username: string) => Promise<boolean>;
  */
 declare const upsertGitHubAccounts: (accounts: Omit<GitHubAccount, 'id' | 'created_at' | 'updated_at'>[]) => Promise<GitHubAccount[]>;
 /**
- * 테이블 생성
+ * 테이블 생성을 위한 SQL 쿼리 문자열 생성
  */
-declare const createTable: (schema: TableSchema, permissions?: TablePermissions) => Promise<boolean>;
-export { initSupabase, getSupabase, select, selectOne, insert, update, remove, upsert, signUp, signIn, signOut, getCurrentUser, uploadFile, downloadFile, deleteFile, listFiles, saveJsonToStorage, loadJsonFromStorage, subscribe, getGitHubAccounts, getGitHubAccount, createGitHubAccount, updateGitHubAccount, deleteGitHubAccount, upsertGitHubAccounts, createTable, type SupabaseConfig, type StorageOptions, type QueryOptions, type GitHubAccount, type TableSchema, type ColumnDefinition, type TablePermissions, };
+declare const sqlCreateTable: (schema: TableSchema, permissions?: TablePermissions) => string[];
+export { initSupabase, getSupabase, select, selectOne, insert, update, remove, upsert, signUp, signIn, signOut, getCurrentUser, uploadFile, downloadFile, deleteFile, listFiles, saveJsonToStorage, loadJsonFromStorage, subscribe, getGitHubAccounts, getGitHubAccount, createGitHubAccount, updateGitHubAccount, deleteGitHubAccount, upsertGitHubAccounts, sqlCreateTable, type SupabaseConfig, type StorageOptions, type QueryOptions, type GitHubAccount, type TableSchema, type ColumnDefinition, type TablePermissions, };
 //# sourceMappingURL=supabase.d.ts.map

@@ -1,9 +1,23 @@
 import { Client } from '@notionhq/client';
-import { CreateDatabaseParameters, UpdateDatabaseParameters, CreatePageParameters, UpdatePageParameters, UpdateBlockParameters } from '@notionhq/client/build/src/api-endpoints';
+import { CreateDatabaseParameters, UpdateDatabaseParameters, CreatePageParameters, UpdatePageParameters, UpdateBlockParameters, DatabaseObjectResponse, PageObjectResponse } from '@notionhq/client/build/src/api-endpoints';
 type NotionClientConfig = {
     auth: string;
 };
 type OutputType = 'normal' | 'flatten';
+interface FlattenDatabase {
+    id: string;
+    title: string;
+    created_time: string;
+    last_edited_time: string;
+    url: string;
+    properties: Record<string, {
+        id: string;
+        name: string;
+        type: string;
+        [key: string]: any;
+    }>;
+    [key: string]: any;
+}
 /**
  * Notion 클라이언트 인스턴스를 생성합니다
  * @param config Notion API 설정
@@ -72,5 +86,12 @@ declare const deleteBlock: (client: Client, blockId: string) => Promise<import("
  * @returns 평탄화된 key-value 객체
  */
 declare const flatten: (properties: any, isDatabase?: boolean) => Record<string, any>;
-export { createNotionClient, createDatabase, retrieveDatabase, updateDatabase, createPage, retrievePage, updatePage, retrieveBlock, updateBlock, deleteBlock, flatten };
+/**
+ * 전체 데이터베이스 목록을 조회합니다
+ * @param client Notion 클라이언트
+ * @param outType 출력 형식 ('normal' | 'flatten', 기본값: 'normal')
+ * @returns 데이터베이스 목록
+ */
+declare const listDatabases: (client: Client, outType?: OutputType) => Promise<(import("@notionhq/client/build/src/api-endpoints").PartialDatabaseObjectResponse | DatabaseObjectResponse | PageObjectResponse | import("@notionhq/client/build/src/api-endpoints").PartialPageObjectResponse)[] | FlattenDatabase[]>;
+export { createNotionClient, createDatabase, retrieveDatabase, updateDatabase, createPage, retrievePage, updatePage, retrieveBlock, updateBlock, deleteBlock, flatten, listDatabases, };
 //# sourceMappingURL=notion.d.ts.map

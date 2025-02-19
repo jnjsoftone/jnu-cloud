@@ -1,0 +1,4057 @@
+[
+  {
+    "id": "0bff2c1a-0131-48d2-874a-f423d63ff70a",
+    "title": "NPM",
+    "created_time": "2023-07-19T13:20:00.000Z",
+    "last_edited_time": "2025-02-19T03:42:00.000Z",
+    "url": "https://www.notion.so/0bff2c1a013148d2874af423d63ff70a",
+    "properties": {
+      "organization": {
+        "id": "AQ%7CA",
+        "name": "organization",
+        "type": "rich_text"
+      },
+      "password": {
+        "id": "wXqk",
+        "name": "password",
+        "type": "rich_text"
+      },
+      "email": {
+        "id": "xwJB",
+        "name": "email",
+        "type": "email"
+      },
+      "remark": {
+        "id": "z%3ApE",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "name": {
+        "id": "title",
+        "name": "name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "27a2c851-a986-428e-a65f-e01e7571627f",
+    "title": "online_editor_DB",
+    "created_time": "2022-04-21T12:28:00.000Z",
+    "last_edited_time": "2025-02-19T03:41:00.000Z",
+    "url": "https://www.notion.so/27a2c851a986428ea65fe01e7571627f",
+    "properties": {
+      "password": {
+        "id": "%3FS%40E",
+        "name": "password",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "%40_j%5D",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "id": {
+        "id": "O%3CN%5D",
+        "name": "id",
+        "type": "rich_text"
+      },
+      "tags": {
+        "id": "dyV%60",
+        "name": "tags",
+        "type": "multi_select"
+      },
+      "url": {
+        "id": "ypvs",
+        "name": "url",
+        "type": "url"
+      },
+      "nick": {
+        "id": "title",
+        "name": "nick",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "d28f6c38-194a-4cfd-b4aa-4cda5f47146d",
+    "title": "Private_Personal_Estate_DB",
+    "created_time": "2022-04-23T12:02:00.000Z",
+    "last_edited_time": "2025-02-19T03:41:00.000Z",
+    "url": "https://www.notion.so/d28f6c38194a4cfdb4aa4cda5f47146d",
+    "properties": {
+      "built_date": {
+        "id": "%3CBL%3B",
+        "name": "built_date",
+        "type": "rich_text"
+      },
+      "purchase_price": {
+        "id": "%3E%3APs",
+        "name": "purchase_price",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "%40%7C%5BW",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "model_name": {
+        "id": "HV%3EV",
+        "name": "model_name",
+        "type": "rich_text"
+      },
+      "purchase_date": {
+        "id": "V%5Ea_",
+        "name": "purchase_date",
+        "type": "rich_text"
+      },
+      "new": {
+        "id": "%5BTOv",
+        "name": "new",
+        "type": "rich_text"
+      },
+      "usage": {
+        "id": "%5DEWW",
+        "name": "usage",
+        "type": "rich_text"
+      },
+      "type": {
+        "id": "kOlJ",
+        "name": "type",
+        "type": "rich_text"
+      },
+      "id_no": {
+        "id": "title",
+        "name": "id_no",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "d5245e44-f4ea-4d93-95cc-ac84a814d642",
+    "title": "Private_Debt_Account_DB",
+    "created_time": "2022-04-23T11:46:00.000Z",
+    "last_edited_time": "2025-02-19T03:39:00.000Z",
+    "url": "https://www.notion.so/d5245e44f4ea4d9395ccac84a814d642",
+    "properties": {
+      "repayment_method": {
+        "id": "Ftlg",
+        "name": "repayment_method",
+        "type": "rich_text"
+      },
+      "amount": {
+        "id": "G%40%7Br",
+        "name": "amount",
+        "type": "rich_text"
+      },
+      "expired": {
+        "id": "IilL",
+        "name": "expired",
+        "type": "rich_text"
+      },
+      "acnt_no": {
+        "id": "V%7DEi",
+        "name": "acnt_no",
+        "type": "rich_text"
+      },
+      "repayment_interval": {
+        "id": "%5CjdW",
+        "name": "repayment_interval",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "%5DbII",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "balance": {
+        "id": "en%5D%60",
+        "name": "balance",
+        "type": "rich_text"
+      },
+      "bank": {
+        "id": "iX%3Cs",
+        "name": "bank",
+        "type": "rich_text"
+      },
+      "created": {
+        "id": "vOXD",
+        "name": "created",
+        "type": "rich_text"
+      },
+      "interest": {
+        "id": "ya%3FW",
+        "name": "interest",
+        "type": "rich_text"
+      },
+      "nick": {
+        "id": "title",
+        "name": "nick",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "d7a2f01e-086e-475f-82ea-604b17e87990",
+    "title": "Private_Real_Estate_DB",
+    "created_time": "2022-04-23T11:05:00.000Z",
+    "last_edited_time": "2025-02-19T03:38:00.000Z",
+    "url": "https://www.notion.so/d7a2f01e086e475f82ea604b17e87990",
+    "properties": {
+      "expiry_contractor": {
+        "id": "%3Bt%5Cl",
+        "name": "expiry_contractor",
+        "type": "rich_text"
+      },
+      "acquisition_date": {
+        "id": "%3BuiN",
+        "name": "acquisition_date",
+        "type": "rich_text"
+      },
+      "acquisition_tax": {
+        "id": "%3EoDn",
+        "name": "acquisition_tax",
+        "type": "rich_text"
+      },
+      "type": {
+        "id": "%40CjE",
+        "name": "type",
+        "type": "rich_text"
+      },
+      "acquisition_contractor": {
+        "id": "%40%5DU%3D",
+        "name": "acquisition_contractor",
+        "type": "rich_text"
+      },
+      "expiry_date": {
+        "id": "Gw%5Dv",
+        "name": "expiry_date",
+        "type": "rich_text"
+      },
+      "post_no": {
+        "id": "L%5E%3BW",
+        "name": "post_no",
+        "type": "rich_text"
+      },
+      "acquisition_price": {
+        "id": "Ottx",
+        "name": "acquisition_price",
+        "type": "rich_text"
+      },
+      "owner": {
+        "id": "SV%5E%5E",
+        "name": "owner",
+        "type": "rich_text"
+      },
+      "area": {
+        "id": "XVB%5E",
+        "name": "area",
+        "type": "rich_text"
+      },
+      "expiry_price": {
+        "id": "ZK%3Dx",
+        "name": "expiry_price",
+        "type": "rich_text"
+      },
+      "address_en": {
+        "id": "%5Bkph",
+        "name": "address_en",
+        "type": "rich_text"
+      },
+      "expiry_tax": {
+        "id": "%5B%7B_V",
+        "name": "expiry_tax",
+        "type": "rich_text"
+      },
+      "expiry_type": {
+        "id": "dQz%3D",
+        "name": "expiry_type",
+        "type": "rich_text"
+      },
+      "acquisition_type": {
+        "id": "iD%7Dm",
+        "name": "acquisition_type",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "oVoH",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "address": {
+        "id": "title",
+        "name": "address",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "8403fff2-f5de-43c7-8ee5-301188a82db1",
+    "title": "Private_Insurance_Account_DB",
+    "created_time": "2022-04-23T10:40:00.000Z",
+    "last_edited_time": "2025-02-19T03:37:00.000Z",
+    "url": "https://www.notion.so/8403fff2f5de43c78ee5301188a82db1",
+    "properties": {
+      "vendor": {
+        "id": "FhR%5C",
+        "name": "vendor",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "HHo%3F",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "name": {
+        "id": "H%5C%5CI",
+        "name": "name",
+        "type": "rich_text"
+      },
+      "payer": {
+        "id": "IbF~",
+        "name": "payer",
+        "type": "rich_text"
+      },
+      "expired": {
+        "id": "Qzcc",
+        "name": "expired",
+        "type": "rich_text"
+      },
+      "created": {
+        "id": "jsiv",
+        "name": "created",
+        "type": "rich_text"
+      },
+      "insured": {
+        "id": "z%3BlG",
+        "name": "insured",
+        "type": "rich_text"
+      },
+      "acnt_no": {
+        "id": "title",
+        "name": "acnt_no",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "57a5ccf0-e76f-4a5c-82ea-2f535e85e1e1",
+    "title": "Private_Bank_Account_DB",
+    "created_time": "2022-04-23T10:12:00.000Z",
+    "last_edited_time": "2025-02-19T03:36:00.000Z",
+    "url": "https://www.notion.so/57a5ccf0e76f4a5c82ea2f535e85e1e1",
+    "properties": {
+      "office_phone": {
+        "id": "%3FrZU",
+        "name": "office_phone",
+        "type": "rich_text"
+      },
+      "interest_1": {
+        "id": "E~o_",
+        "name": "interest_1",
+        "type": "number"
+      },
+      "bank": {
+        "id": "IAN%3E",
+        "name": "bank",
+        "type": "rich_text"
+      },
+      "priority": {
+        "id": "OJDN",
+        "name": "priority",
+        "type": "rich_text"
+      },
+      "password": {
+        "id": "V%5BMu",
+        "name": "password",
+        "type": "rich_text"
+      },
+      "office_name": {
+        "id": "Vklg",
+        "name": "office_name",
+        "type": "rich_text"
+      },
+      "balance": {
+        "id": "%5EW%40b",
+        "name": "balance",
+        "type": "number"
+      },
+      "expired": {
+        "id": "%5Ejpo",
+        "name": "expired",
+        "type": "rich_text"
+      },
+      "acnt_no": {
+        "id": "bE%3At",
+        "name": "acnt_no",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "bGsz",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "usage": {
+        "id": "b_EF",
+        "name": "usage",
+        "type": "rich_text"
+      },
+      "office_fax": {
+        "id": "c%3FXs",
+        "name": "office_fax",
+        "type": "rich_text"
+      },
+      "interest_0": {
+        "id": "cBrr",
+        "name": "interest_0",
+        "type": "number"
+      },
+      "state": {
+        "id": "kS%7CZ",
+        "name": "state",
+        "type": "select"
+      },
+      "owner": {
+        "id": "l%5Ecg",
+        "name": "owner",
+        "type": "rich_text"
+      },
+      "office_manager": {
+        "id": "uMFe",
+        "name": "office_manager",
+        "type": "rich_text"
+      },
+      "id": {
+        "id": "woOj",
+        "name": "id",
+        "type": "rich_text"
+      },
+      "created": {
+        "id": "xsDv",
+        "name": "created",
+        "type": "rich_text"
+      },
+      "type": {
+        "id": "xvN%3B",
+        "name": "type",
+        "type": "rich_text"
+      },
+      "input": {
+        "id": "%7CdZb",
+        "name": "input",
+        "type": "checkbox"
+      },
+      "nick": {
+        "id": "title",
+        "name": "nick",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "a5d99324-bb62-4f0a-9945-340c1216e26a",
+    "title": "Private_Card_DB",
+    "created_time": "2022-04-23T09:44:00.000Z",
+    "last_edited_time": "2025-02-19T03:36:00.000Z",
+    "url": "https://www.notion.so/a5d99324bb624f0a9945340c1216e26a",
+    "properties": {
+      "usage": {
+        "id": "DWdi",
+        "name": "usage",
+        "type": "rich_text"
+      },
+      "priority": {
+        "id": "EGH%3F",
+        "name": "priority",
+        "type": "number"
+      },
+      "cvc": {
+        "id": "IXjL",
+        "name": "cvc",
+        "type": "rich_text"
+      },
+      "vendor": {
+        "id": "O%3ETG",
+        "name": "vendor",
+        "type": "rich_text"
+      },
+      "smart_pay": {
+        "id": "RJc%3B",
+        "name": "smart_pay",
+        "type": "rich_text"
+      },
+      "expired": {
+        "id": "YMNo",
+        "name": "expired",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "%5CMSe",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "vendor_name": {
+        "id": "%5DihG",
+        "name": "vendor_name",
+        "type": "rich_text"
+      },
+      "password": {
+        "id": "_E%3FL",
+        "name": "password",
+        "type": "rich_text"
+      },
+      "links": {
+        "id": "_eN%3F",
+        "name": "links",
+        "type": "rich_text"
+      },
+      "owner": {
+        "id": "m%7BWT",
+        "name": "owner",
+        "type": "rich_text"
+      },
+      "input": {
+        "id": "nOZ%3B",
+        "name": "input",
+        "type": "checkbox"
+      },
+      "type": {
+        "id": "qkQ_",
+        "name": "type",
+        "type": "rich_text"
+      },
+      "card_no": {
+        "id": "rB%3A~",
+        "name": "card_no",
+        "type": "rich_text"
+      },
+      "id": {
+        "id": "z%3Cn%5D",
+        "name": "id",
+        "type": "rich_text"
+      },
+      "email": {
+        "id": "%7DWeF",
+        "name": "email",
+        "type": "rich_text"
+      },
+      "nick": {
+        "id": "title",
+        "name": "nick",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "12048ae1-1a9a-475c-9c2f-9c1d62ce3d1f",
+    "title": "Private_Family_DB",
+    "created_time": "2022-04-23T09:33:00.000Z",
+    "last_edited_time": "2025-02-19T03:31:00.000Z",
+    "url": "https://www.notion.so/12048ae11a9a475c9c2f9c1d62ce3d1f",
+    "properties": {
+      "rrn": {
+        "id": "%3D%40oC",
+        "name": "rrn",
+        "type": "rich_text"
+      },
+      "phone": {
+        "id": "%3Dx%3E%5D",
+        "name": "phone",
+        "type": "rich_text"
+      },
+      "email": {
+        "id": "G%7DT_",
+        "name": "email",
+        "type": "rich_text"
+      },
+      "bank_accounts": {
+        "id": "Hd%3EU",
+        "name": "bank_accounts",
+        "type": "rich_text"
+      },
+      "address": {
+        "id": "Kv%3DF",
+        "name": "address",
+        "type": "rich_text"
+      },
+      "relation": {
+        "id": "whwK",
+        "name": "relation",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "~ulK",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "name": {
+        "id": "title",
+        "name": "name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "1a34dd75-5437-405d-9e85-ecec575e784c",
+    "title": "Device_User_DB",
+    "created_time": "2022-04-23T15:13:00.000Z",
+    "last_edited_time": "2025-02-19T03:30:00.000Z",
+    "url": "https://www.notion.so/1a34dd755437405d9e85ecec575e784c",
+    "properties": {
+      "allowed": {
+        "id": "J%3AvR",
+        "name": "allowed",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "R%5E%7CU",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "updated_date": {
+        "id": "%5CR%5ER",
+        "name": "updated_date",
+        "type": "date"
+      },
+      "role": {
+        "id": "oPUN",
+        "name": "role",
+        "type": "rich_text"
+      },
+      "expired_date": {
+        "id": "s%5EMM",
+        "name": "expired_date",
+        "type": "date"
+      },
+      "password": {
+        "id": "~%3FUR",
+        "name": "password",
+        "type": "rich_text"
+      },
+      "id": {
+        "id": "title",
+        "name": "id",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "c1f79f0c-e3df-4645-b457-c6d3a28e181e",
+    "title": "IT_Device_DB",
+    "created_time": "2022-04-23T08:46:00.000Z",
+    "last_edited_time": "2025-02-19T03:30:00.000Z",
+    "url": "https://www.notion.so/c1f79f0ce3df4645b457c6d3a28e181e",
+    "properties": {
+      "purchased": {
+        "id": "AmMM",
+        "name": "purchased",
+        "type": "rich_text"
+      },
+      "ram": {
+        "id": "J%5Dt_",
+        "name": "ram",
+        "type": "rich_text"
+      },
+      "type": {
+        "id": "R%5C%7CC",
+        "name": "type",
+        "type": "rich_text"
+      },
+      "port": {
+        "id": "aSUb",
+        "name": "port",
+        "type": "rich_text"
+      },
+      "os_sn": {
+        "id": "crrg",
+        "name": "os_sn",
+        "type": "rich_text"
+      },
+      "sdd": {
+        "id": "dJOS",
+        "name": "sdd",
+        "type": "rich_text"
+      },
+      "model_name": {
+        "id": "deor",
+        "name": "model_name",
+        "type": "rich_text"
+      },
+      "vendor": {
+        "id": "iR%7Bc",
+        "name": "vendor",
+        "type": "rich_text"
+      },
+      "os": {
+        "id": "lBtX",
+        "name": "os",
+        "type": "rich_text"
+      },
+      "gpu": {
+        "id": "mrd%7B",
+        "name": "gpu",
+        "type": "rich_text"
+      },
+      "hdd": {
+        "id": "nnbt",
+        "name": "hdd",
+        "type": "rich_text"
+      },
+      "power": {
+        "id": "pdZn",
+        "name": "power",
+        "type": "rich_text"
+      },
+      "price": {
+        "id": "qma%40",
+        "name": "price",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "um%3CE",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "cpu": {
+        "id": "zSoz",
+        "name": "cpu",
+        "type": "rich_text"
+      },
+      "nick": {
+        "id": "title",
+        "name": "nick",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "369c89b1-02ca-40fe-a358-977d4570f404",
+    "title": "Installed_App_DB",
+    "created_time": "2022-04-23T08:10:00.000Z",
+    "last_edited_time": "2025-02-19T03:27:00.000Z",
+    "url": "https://www.notion.so/369c89b102ca40fea358977d4570f404",
+    "properties": {
+      "password": {
+        "id": "%3EnXv",
+        "name": "password",
+        "type": "rich_text"
+      },
+      "id": {
+        "id": "DWM%3E",
+        "name": "id",
+        "type": "rich_text"
+      },
+      "restrict": {
+        "id": "Ecjf",
+        "name": "restrict",
+        "type": "rich_text"
+      },
+      "price": {
+        "id": "HBMb",
+        "name": "price",
+        "type": "rich_text"
+      },
+      "purpose": {
+        "id": "IOt%5E",
+        "name": "purpose",
+        "type": "rich_text"
+      },
+      "activate_key": {
+        "id": "U%7Bpw",
+        "name": "activate_key",
+        "type": "rich_text"
+      },
+      "vendor": {
+        "id": "Xl%3Cu",
+        "name": "vendor",
+        "type": "rich_text"
+      },
+      "market": {
+        "id": "%5Dqd%40",
+        "name": "market",
+        "type": "rich_text"
+      },
+      "device": {
+        "id": "m%5DQM",
+        "name": "device",
+        "type": "rich_text"
+      },
+      "expired": {
+        "id": "qiA%5E",
+        "name": "expired",
+        "type": "date"
+      },
+      "remark": {
+        "id": "%7CWq%3E",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "app": {
+        "id": "title",
+        "name": "app",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "76a27c69-ab1e-4040-9208-79b163263f46",
+    "title": "API_Vendor_DB",
+    "created_time": "2022-04-23T07:47:00.000Z",
+    "last_edited_time": "2025-02-19T03:25:00.000Z",
+    "url": "https://www.notion.so/76a27c69ab1e4040920879b163263f46",
+    "properties": {
+      "url": {
+        "id": "%40v%3D_",
+        "name": "url",
+        "type": "rich_text"
+      },
+      "vendor": {
+        "id": "EzL%3A",
+        "name": "vendor",
+        "type": "rich_text"
+      },
+      "type": {
+        "id": "ROBl",
+        "name": "type",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "%5DvI%3C",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "kor": {
+        "id": "f_gW",
+        "name": "kor",
+        "type": "rich_text"
+      },
+      "usage": {
+        "id": "nqO%5C",
+        "name": "usage",
+        "type": "rich_text"
+      },
+      "api_account": {
+        "id": "t%3F%3Fw",
+        "name": "api_account",
+        "type": "relation"
+      },
+      "api": {
+        "id": "title",
+        "name": "api",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "b7d2beee-75cc-465b-a95a-29c786367933",
+    "title": "API_Account_DB",
+    "created_time": "2022-04-23T07:34:00.000Z",
+    "last_edited_time": "2025-02-19T03:24:00.000Z",
+    "url": "https://www.notion.so/b7d2beee75cc465ba95a29c786367933",
+    "properties": {
+      "description": {
+        "id": "E%7Di%40",
+        "name": "description",
+        "type": "rich_text"
+      },
+      "password": {
+        "id": "FNA%40",
+        "name": "password",
+        "type": "rich_text"
+      },
+      "id": {
+        "id": "QT_~",
+        "name": "id",
+        "type": "rich_text"
+      },
+      "site": {
+        "id": "Q%5D%3BW",
+        "name": "site",
+        "type": "rich_text"
+      },
+      "key": {
+        "id": "SrwM",
+        "name": "key",
+        "type": "rich_text"
+      },
+      "vendor": {
+        "id": "Xx%5B%3C",
+        "name": "vendor",
+        "type": "relation"
+      },
+      "usage": {
+        "id": "Yea%5D",
+        "name": "usage",
+        "type": "rich_text"
+      },
+      "email": {
+        "id": "y%7Cy%5B",
+        "name": "email",
+        "type": "relation"
+      },
+      "remark": {
+        "id": "~mQY",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "nick": {
+        "id": "title",
+        "name": "nick",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "86155293-6259-4341-b2e9-72a5f2cc2665",
+    "title": "Github_Repository_DB",
+    "created_time": "2022-04-21T13:40:00.000Z",
+    "last_edited_time": "2025-02-19T03:23:00.000Z",
+    "url": "https://www.notion.so/8615529362594341b2e972a5f2cc2665",
+    "properties": {
+      "remark": {
+        "id": "JCY%5D",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "tags": {
+        "id": "Wfsp",
+        "name": "tags",
+        "type": "multi_select"
+      },
+      "user": {
+        "id": "gZOO",
+        "name": "user",
+        "type": "rich_text"
+      },
+      "url": {
+        "id": "title",
+        "name": "url",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "d966967a-94a7-4345-a579-f387b92c8001",
+    "title": "Github_Account_DB",
+    "created_time": "2022-04-20T23:31:00.000Z",
+    "last_edited_time": "2025-02-19T03:23:00.000Z",
+    "url": "https://www.notion.so/d966967a94a74345a579f387b92c8001",
+    "properties": {
+      "remark": {
+        "id": "%3B~LL",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "password": {
+        "id": "FKaR",
+        "name": "password",
+        "type": "rich_text"
+      },
+      "email": {
+        "id": "SWYe",
+        "name": "email",
+        "type": "rich_text"
+      },
+      "token": {
+        "id": "sYcY",
+        "name": "token",
+        "type": "rich_text"
+      },
+      "email_relation": {
+        "id": "~vYl",
+        "name": "email_relation",
+        "type": "relation"
+      },
+      "id": {
+        "id": "title",
+        "name": "id",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "c477220b-b6d3-4e20-ae0e-a288427c2c97",
+    "title": "Notion_obj_DB",
+    "created_time": "2021-11-05T07:13:00.000Z",
+    "last_edited_time": "2025-02-19T03:21:00.000Z",
+    "url": "https://www.notion.so/c477220bb6d34e20ae0ea288427c2c97",
+    "properties": {
+      "token": {
+        "id": "Cml%3D",
+        "name": "token",
+        "type": "relation"
+      },
+      "remark": {
+        "id": "E_%3BJ",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "parent": {
+        "id": "H%3Bdh",
+        "name": "parent",
+        "type": "rich_text"
+      },
+      "type": {
+        "id": "I%7D%3Di",
+        "name": "type",
+        "type": "rich_text"
+      },
+      "parentId": {
+        "id": "%5B_p%3A",
+        "name": "parentId",
+        "type": "rich_text"
+      },
+      "api": {
+        "id": "%5CDAA",
+        "name": "api",
+        "type": "rich_text"
+      },
+      "id": {
+        "id": "_nef",
+        "name": "id",
+        "type": "rich_text"
+      },
+      "level": {
+        "id": "o%7B%7BA",
+        "name": "level",
+        "type": "number"
+      },
+      "title": {
+        "id": "title",
+        "name": "title",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "a71157c3-11c4-41e5-bf19-50d54a5f724f",
+    "title": "Notion_Token_DB",
+    "created_time": "2021-11-05T03:03:00.000Z",
+    "last_edited_time": "2025-02-19T03:20:00.000Z",
+    "url": "https://www.notion.so/a71157c311c441e5bf1950d54a5f724f",
+    "properties": {
+      "link": {
+        "id": "%3B%5BXP",
+        "name": "link",
+        "type": "relation"
+      },
+      "type": {
+        "id": "%3Fkxe",
+        "name": "type",
+        "type": "select"
+      },
+      "token": {
+        "id": "E%7BQh",
+        "name": "token",
+        "type": "rich_text"
+      },
+      "app": {
+        "id": "U%5EZ~",
+        "name": "app",
+        "type": "select"
+      },
+      "workspace": {
+        "id": "%5Bjs%3B",
+        "name": "workspace",
+        "type": "rich_text"
+      },
+      "scope": {
+        "id": "%7CrXQ",
+        "name": "scope",
+        "type": "select"
+      },
+      "name": {
+        "id": "title",
+        "name": "name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "249ba95b-54d5-4dba-995f-3dcfb3544232",
+    "title": "Email_Account_DB",
+    "created_time": "2022-04-20T23:23:00.000Z",
+    "last_edited_time": "2025-01-22T07:17:00.000Z",
+    "url": "https://www.notion.so/249ba95b54d54dba995f3dcfb3544232",
+    "properties": {
+      "remark": {
+        "id": "%3Ei%3D%3C",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "created": {
+        "id": "POF%5C",
+        "name": "created",
+        "type": "date"
+      },
+      "github_account": {
+        "id": "Wp%5Dj",
+        "name": "github_account",
+        "type": "relation"
+      },
+      "name": {
+        "id": "e%3ENP",
+        "name": "name",
+        "type": "rich_text"
+      },
+      "platform": {
+        "id": "gS%3E%60",
+        "name": "platform",
+        "type": "rich_text"
+      },
+      "tags": {
+        "id": "hbko",
+        "name": "tags",
+        "type": "multi_select"
+      },
+      "password": {
+        "id": "kl_P",
+        "name": "password",
+        "type": "rich_text"
+      },
+      "api_account_db": {
+        "id": "vt%7CD",
+        "name": "api_account_db",
+        "type": "relation"
+      },
+      "usage": {
+        "id": "ysbH",
+        "name": "usage",
+        "type": "rich_text"
+      },
+      "email": {
+        "id": "title",
+        "name": "email",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "ad02bf1d-b091-40cd-a3a5-02b81bac91ee",
+    "title": "Web_Account_DB",
+    "created_time": "2021-11-05T07:37:00.000Z",
+    "last_edited_time": "2025-01-22T07:16:00.000Z",
+    "url": "https://www.notion.so/ad02bf1db09140cda3a502b81bac91ee",
+    "properties": {
+      "email": {
+        "id": "%3FmY%3E",
+        "name": "email",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "I%3Fdv",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "tags": {
+        "id": "YvIK",
+        "name": "tags",
+        "type": "rich_text"
+      },
+      "password": {
+        "id": "%5BX%3BX",
+        "name": "password",
+        "type": "rich_text"
+      },
+      "url": {
+        "id": "%5C%3Cvq",
+        "name": "url",
+        "type": "rich_text"
+      },
+      "id": {
+        "id": "_rsC",
+        "name": "id",
+        "type": "rich_text"
+      },
+      "priority": {
+        "id": "cjJZ",
+        "name": "priority",
+        "type": "number"
+      },
+      "name": {
+        "id": "title",
+        "name": "name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "1395b9c1-c4b1-805d-bccf-c2926bad60f3",
+    "title": "질문들",
+    "created_time": "2024-11-09T07:42:00.000Z",
+    "last_edited_time": "2024-11-09T07:54:00.000Z",
+    "url": "https://www.notion.so/1395b9c1c4b1805dbccfc2926bad60f3",
+    "properties": {
+      "name": {
+        "id": "title",
+        "name": "name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "bca482db-6008-477b-bb91-36bcdf319561",
+    "title": "server",
+    "created_time": "2022-08-06T23:01:00.000Z",
+    "last_edited_time": "2022-08-22T00:48:00.000Z",
+    "url": "https://www.notion.so/bca482db6008477bbb9136bcdf319561",
+    "properties": {
+      "ip": {
+        "id": "NMqJ",
+        "name": "ip",
+        "type": "rich_text"
+      },
+      "pw": {
+        "id": "%5B%60%60S",
+        "name": "pw",
+        "type": "rich_text"
+      },
+      "os": {
+        "id": "%5C%60ux",
+        "name": "os",
+        "type": "rich_text"
+      },
+      "public": {
+        "id": "_PqJ",
+        "name": "public",
+        "type": "rich_text"
+      },
+      "id": {
+        "id": "bU%3Ag",
+        "name": "id",
+        "type": "rich_text"
+      },
+      "private": {
+        "id": "f%3BmU",
+        "name": "private",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "sh%5ED",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "port": {
+        "id": "%7DmCD",
+        "name": "port",
+        "type": "rich_text"
+      },
+      "이름": {
+        "id": "title",
+        "name": "이름",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "0b061f85-bc47-4ca5-ba58-51973a383dca",
+    "title": "ta_indicators_DB",
+    "created_time": "2022-04-21T12:12:00.000Z",
+    "last_edited_time": "2022-08-22T00:47:00.000Z",
+    "url": "https://www.notion.so/0b061f85bc474ca5ba5851973a383dca",
+    "properties": {
+      "04kwargs": {
+        "id": "DYwH",
+        "name": "04kwargs",
+        "type": "rich_text"
+      },
+      "07use": {
+        "id": "Pe~P",
+        "name": "07use",
+        "type": "rich_text"
+      },
+      "02args": {
+        "id": "UWoJ",
+        "name": "02args",
+        "type": "rich_text"
+      },
+      "03func": {
+        "id": "hI%7C%3A",
+        "name": "03func",
+        "type": "rich_text"
+      },
+      "05module": {
+        "id": "kJ%5C%5B",
+        "name": "05module",
+        "type": "rich_text"
+      },
+      "06pos": {
+        "id": "rLvY",
+        "name": "06pos",
+        "type": "rich_text"
+      },
+      "01nick": {
+        "id": "title",
+        "name": "01nick",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "8c1746a2-e4bf-4719-aeb0-f9968aa9ff7c",
+    "title": "단위강의 Sessions",
+    "created_time": "2021-11-04T23:17:00.000Z",
+    "last_edited_time": "2022-05-08T01:19:00.000Z",
+    "url": "https://www.notion.so/8c1746a2e4bf4719aeb0f9968aa9ff7c",
+    "properties": {
+      "04Difficulty": {
+        "id": "%3FJb%3F",
+        "name": "04Difficulty",
+        "type": "number"
+      },
+      "05Url": {
+        "id": "GO%7Dq",
+        "name": "05Url",
+        "type": "url"
+      },
+      "03강좌": {
+        "id": "Njm%3E",
+        "name": "03강좌",
+        "type": "relation"
+      },
+      "06Start": {
+        "id": "%5Dok%7C",
+        "name": "06Start",
+        "type": "date"
+      },
+      "02Tags": {
+        "id": "g%3Cgj",
+        "name": "02Tags",
+        "type": "multi_select"
+      },
+      "06End": {
+        "id": "wAru",
+        "name": "06End",
+        "type": "date"
+      },
+      "07Done": {
+        "id": "%7BrKx",
+        "name": "07Done",
+        "type": "checkbox"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "37945e08-7c0d-4bfd-9091-abfe0804a21c",
+    "title": "Exam_DB",
+    "created_time": "2022-05-01T10:01:00.000Z",
+    "last_edited_time": "2022-05-01T10:02:00.000Z",
+    "url": "https://www.notion.so/37945e087c0d4bfd9091abfe0804a21c",
+    "properties": {
+      "태그": {
+        "id": "Z%5D%3CQ",
+        "name": "태그",
+        "type": "multi_select"
+      },
+      "이름": {
+        "id": "title",
+        "name": "이름",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "628c377a-48b8-437b-a24d-a37ccf58b478",
+    "title": "Tex_Document_DB",
+    "created_time": "2022-04-30T23:17:00.000Z",
+    "last_edited_time": "2022-05-01T00:03:00.000Z",
+    "url": "https://www.notion.so/628c377a48b8437ba24da37ccf58b478",
+    "properties": {
+      "05source": {
+        "id": "L%7CM%3E",
+        "name": "05source",
+        "type": "rich_text"
+      },
+      "04type": {
+        "id": "NC%3Cz",
+        "name": "04type",
+        "type": "multi_select"
+      },
+      "03tags": {
+        "id": "h%40DH",
+        "name": "03tags",
+        "type": "multi_select"
+      },
+      "01name": {
+        "id": "title",
+        "name": "01name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "8777b8b8-788d-4cf3-ab1e-9963a70194c0",
+    "title": "Tex_Example_DB",
+    "created_time": "2022-04-30T22:37:00.000Z",
+    "last_edited_time": "2022-04-30T22:53:00.000Z",
+    "url": "https://www.notion.so/8777b8b8788d4cf3ab1e9963a70194c0",
+    "properties": {
+      "URL": {
+        "id": "0Kb7",
+        "name": "URL",
+        "type": "url"
+      },
+      "05source": {
+        "id": "%3BwKJ",
+        "name": "05source",
+        "type": "rich_text"
+      },
+      "07packages": {
+        "id": "EZoX",
+        "name": "07packages",
+        "type": "multi_select"
+      },
+      "03tags": {
+        "id": "jjIz",
+        "name": "03tags",
+        "type": "multi_select"
+      },
+      "09remark": {
+        "id": "thQY",
+        "name": "09remark",
+        "type": "rich_text"
+      },
+      "02description": {
+        "id": "ximW",
+        "name": "02description",
+        "type": "rich_text"
+      },
+      "01name": {
+        "id": "title",
+        "name": "01name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "90a90e59-8de4-457b-b721-913677d2aab3",
+    "title": "Google_Drive_DB",
+    "created_time": "2022-04-29T05:17:00.000Z",
+    "last_edited_time": "2022-04-29T05:17:00.000Z",
+    "url": "https://www.notion.so/90a90e598de4457bb721913677d2aab3",
+    "properties": {
+      "태그": {
+        "id": "%3Ds%3Dn",
+        "name": "태그",
+        "type": "multi_select"
+      },
+      "이름": {
+        "id": "title",
+        "name": "이름",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "4d067772-cecc-4bcb-82d4-6ff4770cc8cd",
+    "title": "Google_Sheets_DB",
+    "created_time": "2022-04-29T05:16:00.000Z",
+    "last_edited_time": "2022-04-29T05:16:00.000Z",
+    "url": "https://www.notion.so/4d067772cecc4bcb82d46ff4770cc8cd",
+    "properties": {
+      "태그": {
+        "id": "N%5Cl%7C",
+        "name": "태그",
+        "type": "multi_select"
+      },
+      "이름": {
+        "id": "title",
+        "name": "이름",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "ec9d9249-f427-49c8-b3dc-c1a73b046e84",
+    "title": "Repo_Router_DB",
+    "created_time": "2022-04-29T05:15:00.000Z",
+    "last_edited_time": "2022-04-29T05:16:00.000Z",
+    "url": "https://www.notion.so/ec9d9249f42749c8b3dcc1a73b046e84",
+    "properties": {
+      "태그": {
+        "id": "Dxm%7C",
+        "name": "태그",
+        "type": "multi_select"
+      },
+      "이름": {
+        "id": "title",
+        "name": "이름",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "705634c6-50fe-4ad6-b995-658666ddbfbe",
+    "title": "test_db_1",
+    "created_time": "2022-04-29T02:05:00.000Z",
+    "last_edited_time": "2022-04-29T02:06:00.000Z",
+    "url": "https://www.notion.so/705634c650fe4ad6b995658666ddbfbe",
+    "properties": {
+      "col3": {
+        "id": "%7BXOm",
+        "name": "col3",
+        "type": "rich_text"
+      },
+      "col1": {
+        "id": "~q%60P",
+        "name": "col1",
+        "type": "rich_text"
+      },
+      "col2": {
+        "id": "title",
+        "name": "col2",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "8ab9fdaf-169d-4d16-b6c1-0280669254f6",
+    "title": "stock_ba_time_DB",
+    "created_time": "2022-04-20T12:45:00.000Z",
+    "last_edited_time": "2022-04-28T06:41:00.000Z",
+    "url": "https://www.notion.so/8ab9fdaf169d4d16b6c10280669254f6",
+    "properties": {
+      "02bgn": {
+        "id": "a%5CY%3E",
+        "name": "02bgn",
+        "type": "rich_text"
+      },
+      "04exchange": {
+        "id": "o%7BVQ",
+        "name": "04exchange",
+        "type": "select"
+      },
+      "01type": {
+        "id": "vx%7C%40",
+        "name": "01type",
+        "type": "select"
+      },
+      "03end": {
+        "id": "y%3ACB",
+        "name": "03end",
+        "type": "rich_text"
+      },
+      "00date": {
+        "id": "title",
+        "name": "00date",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "ac815ab4-4284-4c56-a72b-636d6ba01b88",
+    "title": "Schedules_automation_DB",
+    "created_time": "2022-04-27T00:00:00.000Z",
+    "last_edited_time": "2022-04-27T00:05:00.000Z",
+    "url": "https://www.notion.so/ac815ab442844c56a72b636d6ba01b88",
+    "properties": {
+      "99remark": {
+        "id": "B%5C%3EL",
+        "name": "99remark",
+        "type": "rich_text"
+      },
+      "04type": {
+        "id": "GYue",
+        "name": "04type",
+        "type": "multi_select"
+      },
+      "03tags": {
+        "id": "%5E%3DD%7C",
+        "name": "03tags",
+        "type": "multi_select"
+      },
+      "05last_date": {
+        "id": "t%3FbC",
+        "name": "05last_date",
+        "type": "rich_text"
+      },
+      "02period": {
+        "id": "yZSJ",
+        "name": "02period",
+        "type": "rich_text"
+      },
+      "01name": {
+        "id": "title",
+        "name": "01name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "a5183a4a-129d-4a7a-943b-775327a46501",
+    "title": "Update_Settings_Log_DB",
+    "created_time": "2022-04-26T23:08:00.000Z",
+    "last_edited_time": "2022-04-26T23:58:00.000Z",
+    "url": "https://www.notion.so/a5183a4a129d4a7a943b775327a46501",
+    "properties": {
+      "03var": {
+        "id": "A%3Ejh",
+        "name": "03var",
+        "type": "rich_text"
+      },
+      "04nt_db_id": {
+        "id": "HpFV",
+        "name": "04nt_db_id",
+        "type": "rich_text"
+      },
+      "13_client_port": {
+        "id": "RDrh",
+        "name": "13_client_port",
+        "type": "rich_text"
+      },
+      "02file": {
+        "id": "XhH%5B",
+        "name": "02file",
+        "type": "rich_text"
+      },
+      "06folder": {
+        "id": "YBzv",
+        "name": "06folder",
+        "type": "rich_text"
+      },
+      "11doctype": {
+        "id": "Yw%5BV",
+        "name": "11doctype",
+        "type": "select"
+      },
+      "12_client_ip": {
+        "id": "cg%3BT",
+        "name": "12_client_ip",
+        "type": "rich_text"
+      },
+      "11client_name": {
+        "id": "kQpz",
+        "name": "11client_name",
+        "type": "rich_text"
+      },
+      "99remark": {
+        "id": "u%60SP",
+        "name": "99remark",
+        "type": "rich_text"
+      },
+      "02update_time": {
+        "id": "%7DHG%5D",
+        "name": "02update_time",
+        "type": "date"
+      },
+      "01setting_on": {
+        "id": "title",
+        "name": "01setting_on",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "a95e5973-41f6-4da9-89e4-1d8edd4faca6",
+    "title": "Web_Account_DB",
+    "created_time": "2022-04-24T08:05:00.000Z",
+    "last_edited_time": "2022-04-26T23:31:00.000Z",
+    "url": "https://www.notion.so/a95e597341f64da989e41d8edd4faca6",
+    "properties": {
+      "06Tags": {
+        "id": "%3E%3DgE",
+        "name": "06Tags",
+        "type": "rich_text"
+      },
+      "04Priority": {
+        "id": "%3FnAl",
+        "name": "04Priority",
+        "type": "rich_text"
+      },
+      "07URL": {
+        "id": "Atcw",
+        "name": "07URL",
+        "type": "rich_text"
+      },
+      "03PW": {
+        "id": "M%5Ec%3A",
+        "name": "03PW",
+        "type": "rich_text"
+      },
+      "01Email": {
+        "id": "%60oZf",
+        "name": "01Email",
+        "type": "rich_text"
+      },
+      "08Created": {
+        "id": "gOso",
+        "name": "08Created",
+        "type": "rich_text"
+      },
+      "02ID": {
+        "id": "j%3Fus",
+        "name": "02ID",
+        "type": "rich_text"
+      },
+      "05Remark": {
+        "id": "vHIy",
+        "name": "05Remark",
+        "type": "rich_text"
+      },
+      "00Name": {
+        "id": "title",
+        "name": "00Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "f6a41ffa-9fa4-4cea-bb6f-627c67c1fc93",
+    "title": "Ebest_Requests_DB",
+    "created_time": "2022-04-21T11:22:00.000Z",
+    "last_edited_time": "2022-04-26T06:10:00.000Z",
+    "url": "https://www.notion.so/f6a41ffa9fa44ceabb6f627c67c1fc93",
+    "properties": {
+      "06usage": {
+        "id": "C%5Ek%5D",
+        "name": "06usage",
+        "type": "rich_text"
+      },
+      "07priority": {
+        "id": "QvjZ",
+        "name": "07priority",
+        "type": "rich_text"
+      },
+      "09item": {
+        "id": "TP%5Cm",
+        "name": "09item",
+        "type": "rich_text"
+      },
+      "05desc_devCenter": {
+        "id": "Vp%7BO",
+        "name": "05desc_devCenter",
+        "type": "rich_text"
+      },
+      "11limit_1sec": {
+        "id": "X%3Ad%5B",
+        "name": "11limit_1sec",
+        "type": "rich_text"
+      },
+      "08market": {
+        "id": "XQMe",
+        "name": "08market",
+        "type": "rich_text"
+      },
+      "01no": {
+        "id": "%5Bm%5BY",
+        "name": "01no",
+        "type": "number"
+      },
+      "13included": {
+        "id": "b%7DMZ",
+        "name": "13included",
+        "type": "rich_text"
+      },
+      "04desc": {
+        "id": "gz%7Ck",
+        "name": "04desc",
+        "type": "rich_text"
+      },
+      "12limit_10min": {
+        "id": "oVYA",
+        "name": "12limit_10min",
+        "type": "rich_text"
+      },
+      "02req_type": {
+        "id": "o%5BGz",
+        "name": "02req_type",
+        "type": "rich_text"
+      },
+      "10remark": {
+        "id": "wlUK",
+        "name": "10remark",
+        "type": "rich_text"
+      },
+      "03req_code": {
+        "id": "title",
+        "name": "03req_code",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "14b913fb-c5cf-4c0d-bdb0-ecc37ef7c55f",
+    "title": "py_section_pattern_DB",
+    "created_time": "2022-04-22T09:49:00.000Z",
+    "last_edited_time": "2022-04-26T04:48:00.000Z",
+    "url": "https://www.notion.so/14b913fbc5cf4c0dbdb0ecc37ef7c55f",
+    "properties": {
+      "02tags": {
+        "id": "p_%3E%3E",
+        "name": "02tags",
+        "type": "multi_select"
+      },
+      "01pattern": {
+        "id": "title",
+        "name": "01pattern",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "f57f2d85-c0cc-4adc-a263-9abe9eb77bfc",
+    "title": "py_block_schema_DB",
+    "created_time": "2022-04-22T09:38:00.000Z",
+    "last_edited_time": "2022-04-26T04:48:00.000Z",
+    "url": "https://www.notion.so/f57f2d85c0cc4adca2639abe9eb77bfc",
+    "properties": {
+      "03marker": {
+        "id": "HShk",
+        "name": "03marker",
+        "type": "rich_text"
+      },
+      "04level": {
+        "id": "R%3Ca%3E",
+        "name": "04level",
+        "type": "rich_text"
+      },
+      "05multi_line": {
+        "id": "UX%7DT",
+        "name": "05multi_line",
+        "type": "checkbox"
+      },
+      "02type": {
+        "id": "srJ%3C",
+        "name": "02type",
+        "type": "select"
+      },
+      "01name": {
+        "id": "title",
+        "name": "01name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "b7f61eb0-1881-4dca-9ff4-e95006f4ca75",
+    "title": "py_blocks_DB",
+    "created_time": "2022-04-22T09:20:00.000Z",
+    "last_edited_time": "2022-04-26T04:47:00.000Z",
+    "url": "https://www.notion.so/b7f61eb018814dca9ff4e95006f4ca75",
+    "properties": {
+      "05module": {
+        "id": "%3B%3Dav",
+        "name": "05module",
+        "type": "relation"
+      },
+      "07section": {
+        "id": "%3CiD%3A",
+        "name": "07section",
+        "type": "select"
+      },
+      "02description": {
+        "id": "RflV",
+        "name": "02description",
+        "type": "rich_text"
+      },
+      "03tags": {
+        "id": "SsJZ",
+        "name": "03tags",
+        "type": "multi_select"
+      },
+      "08type": {
+        "id": "Xuet",
+        "name": "08type",
+        "type": "select"
+      },
+      "04children": {
+        "id": "fyR%5C",
+        "name": "04children",
+        "type": "relation"
+      },
+      "06parent": {
+        "id": "t%3B%5Eo",
+        "name": "06parent",
+        "type": "relation"
+      },
+      "01name": {
+        "id": "title",
+        "name": "01name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "39814d57-e5b2-40bd-92b3-469e136f49a8",
+    "title": "py_files_DB",
+    "created_time": "2022-04-22T00:47:00.000Z",
+    "last_edited_time": "2022-04-26T04:47:00.000Z",
+    "url": "https://www.notion.so/39814d57e5b240bd92b3469e136f49a8",
+    "properties": {
+      "05first_line": {
+        "id": "%3BqIu",
+        "name": "05first_line",
+        "type": "rich_text"
+      },
+      "02description": {
+        "id": "RflV",
+        "name": "02description",
+        "type": "rich_text"
+      },
+      "03tags": {
+        "id": "SsJZ",
+        "name": "03tags",
+        "type": "multi_select"
+      },
+      "06package": {
+        "id": "%60aN%3B",
+        "name": "06package",
+        "type": "relation"
+      },
+      "07py_blocks_DB": {
+        "id": "moRb",
+        "name": "07py_blocks_DB",
+        "type": "relation"
+      },
+      "04category": {
+        "id": "u%5Boa",
+        "name": "04category",
+        "type": "select"
+      },
+      "01path": {
+        "id": "title",
+        "name": "01path",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "19ff2100-575b-406f-a031-6c61f3b8dd57",
+    "title": "Memo",
+    "created_time": "2021-11-05T04:25:00.000Z",
+    "last_edited_time": "2022-04-26T04:46:00.000Z",
+    "url": "https://www.notion.so/19ff2100575b406fa0316c61f3b8dd57",
+    "properties": {
+      "03Created": {
+        "id": "%3DwyP",
+        "name": "03Created",
+        "type": "created_time"
+      },
+      "02Tags": {
+        "id": "%3F%3Ebk",
+        "name": "02Tags",
+        "type": "multi_select"
+      },
+      "04content": {
+        "id": "SGCl",
+        "name": "04content",
+        "type": "rich_text"
+      },
+      "01Memo": {
+        "id": "title",
+        "name": "01Memo",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "f08266e6-4491-4885-91a8-a02f775afaeb",
+    "title": "Private_Family_Ceremony_DB",
+    "created_time": "2022-04-24T01:09:00.000Z",
+    "last_edited_time": "2022-04-26T04:45:00.000Z",
+    "url": "https://www.notion.so/f08266e64491488591a8a02f775afaeb",
+    "properties": {
+      "04location": {
+        "id": "C~FF",
+        "name": "04location",
+        "type": "rich_text"
+      },
+      "06subject": {
+        "id": "ExOY",
+        "name": "06subject",
+        "type": "rich_text"
+      },
+      "02type": {
+        "id": "cA%3EC",
+        "name": "02type",
+        "type": "select"
+      },
+      "03date": {
+        "id": "st%3Fp",
+        "name": "03date",
+        "type": "rich_text"
+      },
+      "05relation": {
+        "id": "%7B%60vU",
+        "name": "05relation",
+        "type": "rich_text"
+      },
+      "01name": {
+        "id": "title",
+        "name": "01name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "30786a8b-5ae8-4aa4-810e-b790d95873fc",
+    "title": "UserPackage_DB",
+    "created_time": "2022-04-15T08:57:00.000Z",
+    "last_edited_time": "2022-04-26T04:45:00.000Z",
+    "url": "https://www.notion.so/30786a8b5ae84aa4810eb790d95873fc",
+    "properties": {
+      "03github": {
+        "id": "%3CpVm",
+        "name": "03github",
+        "type": "rich_text"
+      },
+      "04python_ver": {
+        "id": "AlwW",
+        "name": "04python_ver",
+        "type": "rich_text"
+      },
+      "07root_folder": {
+        "id": "Ifgi",
+        "name": "07root_folder",
+        "type": "rich_text"
+      },
+      "02Tags": {
+        "id": "X%3EjR",
+        "name": "02Tags",
+        "type": "multi_select"
+      },
+      "06py_files": {
+        "id": "gwt%3A",
+        "name": "06py_files",
+        "type": "relation"
+      },
+      "05progress": {
+        "id": "sZ%7Dl",
+        "name": "05progress",
+        "type": "number"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "0ecde6d0-ba71-4906-9f50-07b87797dedb",
+    "title": "Web_Clipping_DB",
+    "created_time": "2021-10-31T09:18:00.000Z",
+    "last_edited_time": "2022-04-26T04:44:00.000Z",
+    "url": "https://www.notion.so/0ecde6d0ba7149069f5007b87797dedb",
+    "properties": {
+      "04Grade": {
+        "id": "TBJi",
+        "name": "04Grade",
+        "type": "select"
+      },
+      "02URL": {
+        "id": "sEp%5D",
+        "name": "02URL",
+        "type": "url"
+      },
+      "05Error": {
+        "id": "svmj",
+        "name": "05Error",
+        "type": "checkbox"
+      },
+      "03Tags": {
+        "id": "vtvs",
+        "name": "03Tags",
+        "type": "multi_select"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "7ecb50c9-c65e-40ca-acee-796b833d3ed8",
+    "title": "scrap_site_DB",
+    "created_time": "2022-04-22T11:00:00.000Z",
+    "last_edited_time": "2022-04-26T04:43:00.000Z",
+    "url": "https://www.notion.so/7ecb50c9c65e40caacee796b833d3ed8",
+    "properties": {
+      "03scrap_list": {
+        "id": "NznR",
+        "name": "03scrap_list",
+        "type": "relation"
+      },
+      "02tags": {
+        "id": "gelF",
+        "name": "02tags",
+        "type": "multi_select"
+      },
+      "01name": {
+        "id": "title",
+        "name": "01name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "be1ac9e0-2b64-4717-9b04-7e87700f8b3f",
+    "title": "scrap_list_DB",
+    "created_time": "2022-04-22T11:00:00.000Z",
+    "last_edited_time": "2022-04-26T04:43:00.000Z",
+    "url": "https://www.notion.so/be1ac9e02b6447179b047e87700f8b3f",
+    "properties": {
+      "scrap_pages": {
+        "id": "LhfP",
+        "name": "scrap_pages",
+        "type": "relation"
+      },
+      "02tags": {
+        "id": "ZTT%5B",
+        "name": "02tags",
+        "type": "multi_select"
+      },
+      "03parent_site": {
+        "id": "smgC",
+        "name": "03parent_site",
+        "type": "relation"
+      },
+      "01name": {
+        "id": "title",
+        "name": "01name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "53a7e351-c37a-4e28-bc11-f970d71f4818",
+    "title": "scrap_pages_DB",
+    "created_time": "2022-04-21T12:18:00.000Z",
+    "last_edited_time": "2022-04-26T04:43:00.000Z",
+    "url": "https://www.notion.so/53a7e351c37a4e28bc11f970d71f4818",
+    "properties": {
+      "05parent_list": {
+        "id": "BEAM",
+        "name": "05parent_list",
+        "type": "relation"
+      },
+      "03googledrive_folder_id": {
+        "id": "_%3CTe",
+        "name": "03googledrive_folder_id",
+        "type": "rich_text"
+      },
+      "04out_type": {
+        "id": "a%3CPa",
+        "name": "04out_type",
+        "type": "multi_select"
+      },
+      "URL": {
+        "id": "aO5Q",
+        "name": "URL",
+        "type": "url"
+      },
+      "02url": {
+        "id": "i_%3Ce",
+        "name": "02url",
+        "type": "rich_text"
+      },
+      "06done": {
+        "id": "sp%3F%5E",
+        "name": "06done",
+        "type": "checkbox"
+      },
+      "07googledrive_folder_path": {
+        "id": "uOJv",
+        "name": "07googledrive_folder_path",
+        "type": "rich_text"
+      },
+      "08local_path": {
+        "id": "%7CO%5Bm",
+        "name": "08local_path",
+        "type": "rich_text"
+      },
+      "01name": {
+        "id": "title",
+        "name": "01name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "2924320d-3d2d-4beb-ad60-aad52aa54903",
+    "title": "stock_ba_unit_DB",
+    "created_time": "2022-04-20T12:39:00.000Z",
+    "last_edited_time": "2022-04-26T04:42:00.000Z",
+    "url": "https://www.notion.so/2924320d3d2d4bebad60aad52aa54903",
+    "properties": {
+      "03bgn": {
+        "id": "%3Aw%3BW",
+        "name": "03bgn",
+        "type": "number"
+      },
+      "04end": {
+        "id": "W%3EB~",
+        "name": "04end",
+        "type": "number"
+      },
+      "02unit": {
+        "id": "oK_a",
+        "name": "02unit",
+        "type": "number"
+      },
+      "05exchange": {
+        "id": "ystE",
+        "name": "05exchange",
+        "type": "select"
+      },
+      "01market": {
+        "id": "title",
+        "name": "01market",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "ba2c4b80-4cb6-4ba5-b4bf-23f5373304fa",
+    "title": "exchange_holidays_DB",
+    "created_time": "2022-04-20T12:51:00.000Z",
+    "last_edited_time": "2022-04-26T04:41:00.000Z",
+    "url": "https://www.notion.so/ba2c4b804cb64ba5b4bf23f5373304fa",
+    "properties": {
+      "03exchange": {
+        "id": "%3Fug~",
+        "name": "03exchange",
+        "type": "rich_text"
+      },
+      "02date": {
+        "id": "%7BEsA",
+        "name": "02date",
+        "type": "date"
+      },
+      "01name": {
+        "id": "title",
+        "name": "01name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "a5961369-764d-4ae6-bd75-bda36de2a818",
+    "title": "trading_tax_DB",
+    "created_time": "2022-04-20T12:29:00.000Z",
+    "last_edited_time": "2022-04-26T04:40:00.000Z",
+    "url": "https://www.notion.so/a5961369764d4ae6bd75bda36de2a818",
+    "properties": {
+      "02market": {
+        "id": "%3DgmD",
+        "name": "02market",
+        "type": "multi_select"
+      },
+      "04rate": {
+        "id": "%3F%3EEr",
+        "name": "04rate",
+        "type": "number"
+      },
+      "07nation": {
+        "id": "%60qrb",
+        "name": "07nation",
+        "type": "select"
+      },
+      "06item": {
+        "id": "dBEo",
+        "name": "06item",
+        "type": "select"
+      },
+      "05applied": {
+        "id": "qtp%3C",
+        "name": "05applied",
+        "type": "date"
+      },
+      "03side": {
+        "id": "u%3C%7BO",
+        "name": "03side",
+        "type": "multi_select"
+      },
+      "01exchange": {
+        "id": "title",
+        "name": "01exchange",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "d2d5f733-0324-479f-af78-21f45a4c56c4",
+    "title": "stock_account_DB",
+    "created_time": "2022-04-20T00:46:00.000Z",
+    "last_edited_time": "2022-04-26T04:40:00.000Z",
+    "url": "https://www.notion.so/d2d5f7330324479faf7821f45a4c56c4",
+    "properties": {
+      "31phone": {
+        "id": "%3B%7BkF",
+        "name": "31phone",
+        "type": "rich_text"
+      },
+      "02name": {
+        "id": "%3F%7BCP",
+        "name": "02name",
+        "type": "rich_text"
+      },
+      "64port_ex": {
+        "id": "FCcu",
+        "name": "64port_ex",
+        "type": "rich_text"
+      },
+      "22use": {
+        "id": "G%5Ec%3C",
+        "name": "22use",
+        "type": "rich_text"
+      },
+      "43은행계좌": {
+        "id": "Is%5EW",
+        "name": "43은행계좌",
+        "type": "rich_text"
+      },
+      "44인터넷뱅킹ID": {
+        "id": "KFwS",
+        "name": "44인터넷뱅킹ID",
+        "type": "rich_text"
+      },
+      "62ip_ex": {
+        "id": "MZHT",
+        "name": "62ip_ex",
+        "type": "rich_text"
+      },
+      "61ip": {
+        "id": "SGP%5E",
+        "name": "61ip",
+        "type": "rich_text"
+      },
+      "07id": {
+        "id": "SJfl",
+        "name": "07id",
+        "type": "rich_text"
+      },
+      "41개설은행": {
+        "id": "SKR%3C",
+        "name": "41개설은행",
+        "type": "rich_text"
+      },
+      "47통장PW": {
+        "id": "S%5EJ%3F",
+        "name": "47통장PW",
+        "type": "rich_text"
+      },
+      "05cert": {
+        "id": "XiR%3B",
+        "name": "05cert",
+        "type": "rich_text"
+      },
+      "46주소": {
+        "id": "_PxM",
+        "name": "46주소",
+        "type": "rich_text"
+      },
+      "01nick": {
+        "id": "cysO",
+        "name": "01nick",
+        "type": "rich_text"
+      },
+      "42개설일": {
+        "id": "eTa%3D",
+        "name": "42개설일",
+        "type": "rich_text"
+      },
+      "45인터넷뱅킹PW": {
+        "id": "gDxw",
+        "name": "45인터넷뱅킹PW",
+        "type": "rich_text"
+      },
+      "04acnt_pw": {
+        "id": "nRe%3B",
+        "name": "04acnt_pw",
+        "type": "rich_text"
+      },
+      "13agency": {
+        "id": "s%3E%40%7C",
+        "name": "13agency",
+        "type": "relation"
+      },
+      "21pw": {
+        "id": "sjWu",
+        "name": "21pw",
+        "type": "rich_text"
+      },
+      "11item": {
+        "id": "sovz",
+        "name": "11item",
+        "type": "rich_text"
+      },
+      "12mode": {
+        "id": "u%5Clr",
+        "name": "12mode",
+        "type": "rich_text"
+      },
+      "63port": {
+        "id": "%7B%5CUW",
+        "name": "63port",
+        "type": "rich_text"
+      },
+      "06email": {
+        "id": "%7CHoe",
+        "name": "06email",
+        "type": "rich_text"
+      },
+      "03acnt_no": {
+        "id": "title",
+        "name": "03acnt_no",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "55cd492e-2265-4251-9e52-cf982584eef5",
+    "title": "stock_agency_DB",
+    "created_time": "2022-04-20T00:54:00.000Z",
+    "last_edited_time": "2022-04-26T04:36:00.000Z",
+    "url": "https://www.notion.so/55cd492e226542519e52cf982584eef5",
+    "properties": {
+      "08fee_sell": {
+        "id": "Ezqg",
+        "name": "08fee_sell",
+        "type": "number"
+      },
+      "05created": {
+        "id": "I%40vU",
+        "name": "05created",
+        "type": "date"
+      },
+      "03api": {
+        "id": "MmIy",
+        "name": "03api",
+        "type": "checkbox"
+      },
+      "09stock_accounts": {
+        "id": "X_YZ",
+        "name": "09stock_accounts",
+        "type": "relation"
+      },
+      "02Tags": {
+        "id": "fwWi",
+        "name": "02Tags",
+        "type": "multi_select"
+      },
+      "07fee_buy": {
+        "id": "k%7BoE",
+        "name": "07fee_buy",
+        "type": "number"
+      },
+      "06accounts_agency": {
+        "id": "nvTC",
+        "name": "06accounts_agency",
+        "type": "relation"
+      },
+      "04trading": {
+        "id": "wtzy",
+        "name": "04trading",
+        "type": "multi_select"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "fe8e076a-8d9d-49d9-9f4e-685d000dae18",
+    "title": "Server_list_DB",
+    "created_time": "2022-04-21T11:52:00.000Z",
+    "last_edited_time": "2022-04-26T04:35:00.000Z",
+    "url": "https://www.notion.so/fe8e076a8d9d49d99f4e685d000dae18",
+    "properties": {
+      "03ip": {
+        "id": "%40Hw%5E",
+        "name": "03ip",
+        "type": "rich_text"
+      },
+      "11user": {
+        "id": "Ch%7Ba",
+        "name": "11user",
+        "type": "rich_text"
+      },
+      "07app_type": {
+        "id": "Epqw",
+        "name": "07app_type",
+        "type": "multi_select"
+      },
+      "06PC_nick": {
+        "id": "U%5BP%3A",
+        "name": "06PC_nick",
+        "type": "rich_text"
+      },
+      "99remark": {
+        "id": "%60%60rK",
+        "name": "99remark",
+        "type": "rich_text"
+      },
+      "21open": {
+        "id": "eqNi",
+        "name": "21open",
+        "type": "rich_text"
+      },
+      "04port": {
+        "id": "h%3F%40f",
+        "name": "04port",
+        "type": "rich_text"
+      },
+      "05external": {
+        "id": "kOJT",
+        "name": "05external",
+        "type": "checkbox"
+      },
+      "02url": {
+        "id": "w%3D%3FE",
+        "name": "02url",
+        "type": "multi_select"
+      },
+      "01Server_nick": {
+        "id": "title",
+        "name": "01Server_nick",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "6fca9f8e-8cac-4976-8b44-173197103152",
+    "title": "ebest_strategies_DB",
+    "created_time": "2022-04-21T12:07:00.000Z",
+    "last_edited_time": "2022-04-26T04:34:00.000Z",
+    "url": "https://www.notion.so/6fca9f8e8cac49768b44173197103152",
+    "properties": {
+      "12clear": {
+        "id": "%3ExLZ",
+        "name": "12clear",
+        "type": "rich_text"
+      },
+      "07trade": {
+        "id": "%3F%3F%60w",
+        "name": "07trade",
+        "type": "rich_text"
+      },
+      "06triger": {
+        "id": "%3Fu%3Bz",
+        "name": "06triger",
+        "type": "rich_text"
+      },
+      "99remark": {
+        "id": "L%7D%3CO",
+        "name": "99remark",
+        "type": "rich_text"
+      },
+      "13out": {
+        "id": "Nhs%60",
+        "name": "13out",
+        "type": "rich_text"
+      },
+      "09splits": {
+        "id": "OBp%3E",
+        "name": "09splits",
+        "type": "rich_text"
+      },
+      "05kwargs": {
+        "id": "Uz%5Ch",
+        "name": "05kwargs",
+        "type": "rich_text"
+      },
+      "02side": {
+        "id": "XL%60N",
+        "name": "02side",
+        "type": "rich_text"
+      },
+      "03data": {
+        "id": "%5C%5EWm",
+        "name": "03data",
+        "type": "rich_text"
+      },
+      "04inits": {
+        "id": "hB%3Fp",
+        "name": "04inits",
+        "type": "rich_text"
+      },
+      "08updates": {
+        "id": "l%3FtL",
+        "name": "08updates",
+        "type": "rich_text"
+      },
+      "11timer": {
+        "id": "y%5Bq%5B",
+        "name": "11timer",
+        "type": "rich_text"
+      },
+      "01st_name": {
+        "id": "title",
+        "name": "01st_name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "61e17224-bd2d-426a-88d6-bad089fa8a44",
+    "title": "analysis_setting_DB",
+    "created_time": "2022-04-21T12:11:00.000Z",
+    "last_edited_time": "2022-04-26T04:32:00.000Z",
+    "url": "https://www.notion.so/61e17224bd2d426a88d6bad089fa8a44",
+    "properties": {
+      "02included": {
+        "id": "%3Fg%5DX",
+        "name": "02included",
+        "type": "rich_text"
+      },
+      "05val": {
+        "id": "Jwg%40",
+        "name": "05val",
+        "type": "rich_text"
+      },
+      "04type": {
+        "id": "huf%40",
+        "name": "04type",
+        "type": "rich_text"
+      },
+      "03remark": {
+        "id": "usi%3B",
+        "name": "03remark",
+        "type": "rich_text"
+      },
+      "01key": {
+        "id": "title",
+        "name": "01key",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "e66c79d7-a273-4515-b993-39c9af0200ca",
+    "title": "Coin_Exchange_DB",
+    "created_time": "2022-04-24T02:15:00.000Z",
+    "last_edited_time": "2022-04-26T04:31:00.000Z",
+    "url": "https://www.notion.so/e66c79d7a2734515b99339c9af0200ca",
+    "properties": {
+      "05fee_buy": {
+        "id": "Beyr",
+        "name": "05fee_buy",
+        "type": "number"
+      },
+      "01url": {
+        "id": "Bez%3F",
+        "name": "01url",
+        "type": "rich_text"
+      },
+      "03api": {
+        "id": "EMpT",
+        "name": "03api",
+        "type": "rich_text"
+      },
+      "06fee_sell": {
+        "id": "W%3Frf",
+        "name": "06fee_sell",
+        "type": "number"
+      },
+      "04trading": {
+        "id": "Y~oI",
+        "name": "04trading",
+        "type": "rich_text"
+      },
+      "02tags": {
+        "id": "q%5BfU",
+        "name": "02tags",
+        "type": "rich_text"
+      },
+      "00name": {
+        "id": "title",
+        "name": "00name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "02bc4b5e-9b37-4a23-ba15-64c8f39ed32e",
+    "title": "Coin_Account_DB",
+    "created_time": "2022-04-24T02:18:00.000Z",
+    "last_edited_time": "2022-04-26T04:31:00.000Z",
+    "url": "https://www.notion.so/02bc4b5e9b374a23ba1564c8f39ed32e",
+    "properties": {
+      "01exchange": {
+        "id": "Aixs",
+        "name": "01exchange",
+        "type": "rich_text"
+      },
+      "06linked_bank": {
+        "id": "B%5Bwg",
+        "name": "06linked_bank",
+        "type": "rich_text"
+      },
+      "04email": {
+        "id": "OXht",
+        "name": "04email",
+        "type": "rich_text"
+      },
+      "09remark": {
+        "id": "QC%5B%5D",
+        "name": "09remark",
+        "type": "rich_text"
+      },
+      "08pw": {
+        "id": "%5BdAL",
+        "name": "08pw",
+        "type": "rich_text"
+      },
+      "03allowed_ip": {
+        "id": "rwLg",
+        "name": "03allowed_ip",
+        "type": "rich_text"
+      },
+      "02id": {
+        "id": "uvte",
+        "name": "02id",
+        "type": "rich_text"
+      },
+      "07priority": {
+        "id": "%7BL~%40",
+        "name": "07priority",
+        "type": "rich_text"
+      },
+      "05key": {
+        "id": "~E%3CB",
+        "name": "05key",
+        "type": "rich_text"
+      },
+      "00nick": {
+        "id": "title",
+        "name": "00nick",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "8097e815-3aba-465f-9fbb-c6813ec4fa04",
+    "title": "Accupoint_DB",
+    "created_time": "2021-11-06T08:01:00.000Z",
+    "last_edited_time": "2022-04-26T04:27:00.000Z",
+    "url": "https://www.notion.so/8097e8153aba465f9fbbc6813ec4fa04",
+    "properties": {
+      "02Tags": {
+        "id": "E%7BY%7D",
+        "name": "02Tags",
+        "type": "multi_select"
+      },
+      "03Images": {
+        "id": "x%3Bzc",
+        "name": "03Images",
+        "type": "files"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "cec6211d-6448-4c5f-bb2c-b9b8382077aa",
+    "title": "Project_DB",
+    "created_time": "2021-11-05T04:52:00.000Z",
+    "last_edited_time": "2022-04-26T04:26:00.000Z",
+    "url": "https://www.notion.so/cec6211d64484c5fbb2cb9b8382077aa",
+    "properties": {
+      "03Tags": {
+        "id": "DFtf",
+        "name": "03Tags",
+        "type": "rich_text"
+      },
+      "06Project MileStone": {
+        "id": "MaTq",
+        "name": "06Project MileStone",
+        "type": "relation"
+      },
+      "02Purpose": {
+        "id": "%5E%5D%3EF",
+        "name": "02Purpose",
+        "type": "rich_text"
+      },
+      "07MileStone": {
+        "id": "cni%5D",
+        "name": "07MileStone",
+        "type": "relation"
+      },
+      "04Skills": {
+        "id": "uLoA",
+        "name": "04Skills",
+        "type": "multi_select"
+      },
+      "05Priority": {
+        "id": "%7B%7BN%5C",
+        "name": "05Priority",
+        "type": "rich_text"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "3aec5b13-824b-491f-abfc-ea546c3110d7",
+    "title": "Project_MileStone_DB",
+    "created_time": "2021-11-05T05:43:00.000Z",
+    "last_edited_time": "2022-04-26T04:26:00.000Z",
+    "url": "https://www.notion.so/3aec5b13824b491fabfcea546c3110d7",
+    "properties": {
+      "04Version": {
+        "id": "M%7Bsy",
+        "name": "04Version",
+        "type": "rich_text"
+      },
+      "05MileStone1": {
+        "id": "Vpft",
+        "name": "05MileStone1",
+        "type": "select"
+      },
+      "03Date": {
+        "id": "%5CsGs",
+        "name": "03Date",
+        "type": "date"
+      },
+      "06Remark": {
+        "id": "maXf",
+        "name": "06Remark",
+        "type": "rich_text"
+      },
+      "02Project": {
+        "id": "vimJ",
+        "name": "02Project",
+        "type": "relation"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "1f58a3cc-dd15-454a-a752-aac70a4d7b7f",
+    "title": "Package_DB",
+    "created_time": "2021-11-05T05:28:00.000Z",
+    "last_edited_time": "2022-04-26T04:26:00.000Z",
+    "url": "https://www.notion.so/1f58a3ccdd15454aa752aac70a4d7b7f",
+    "properties": {
+      "07MileStone": {
+        "id": "%3Eh%3FK",
+        "name": "07MileStone",
+        "type": "relation"
+      },
+      "03version": {
+        "id": "A%3EtX",
+        "name": "03version",
+        "type": "rich_text"
+      },
+      "02Project": {
+        "id": "WSlr",
+        "name": "02Project",
+        "type": "rich_text"
+      },
+      "06Action": {
+        "id": "W%7B%5Cq",
+        "name": "06Action",
+        "type": "relation"
+      },
+      "04Purpose": {
+        "id": "mdA%3D",
+        "name": "04Purpose",
+        "type": "rich_text"
+      },
+      "05Skills": {
+        "id": "uZau",
+        "name": "05Skills",
+        "type": "rich_text"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "58c49ff9-7cc1-4119-b635-1d79fed4b386",
+    "title": "Action_DB",
+    "created_time": "2021-11-05T06:02:00.000Z",
+    "last_edited_time": "2022-04-26T04:26:00.000Z",
+    "url": "https://www.notion.so/58c49ff97cc14119b6351d79fed4b386",
+    "properties": {
+      "02Tags": {
+        "id": "MzkN",
+        "name": "02Tags",
+        "type": "multi_select"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "e6034f71-30ed-4811-85e1-2f43909f2c38",
+    "title": "Coding_DB",
+    "created_time": "2021-11-05T05:33:00.000Z",
+    "last_edited_time": "2022-04-26T04:26:00.000Z",
+    "url": "https://www.notion.so/e6034f7130ed481185e12f43909f2c38",
+    "properties": {
+      "03Purpose": {
+        "id": "m%3BXq",
+        "name": "03Purpose",
+        "type": "rich_text"
+      },
+      "02Module": {
+        "id": "pg_a",
+        "name": "02Module",
+        "type": "relation"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "230708f7-1296-4952-b059-40eac404e7e2",
+    "title": "Package MileStone DB",
+    "created_time": "2021-11-05T06:06:00.000Z",
+    "last_edited_time": "2022-04-26T04:26:00.000Z",
+    "url": "https://www.notion.so/230708f712964952b05940eac404e7e2",
+    "properties": {
+      "04Version": {
+        "id": "M%7Bsy",
+        "name": "04Version",
+        "type": "rich_text"
+      },
+      "05MileStone1": {
+        "id": "Vpft",
+        "name": "05MileStone1",
+        "type": "select"
+      },
+      "03Date": {
+        "id": "%5CsGs",
+        "name": "03Date",
+        "type": "date"
+      },
+      "06Remark": {
+        "id": "maXf",
+        "name": "06Remark",
+        "type": "rich_text"
+      },
+      "02Module": {
+        "id": "vimJ",
+        "name": "02Module",
+        "type": "relation"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "cad09ed0-abb3-4731-af7a-5dfba78fd933",
+    "title": "images_DB",
+    "created_time": "2021-11-04T23:17:00.000Z",
+    "last_edited_time": "2022-04-26T04:23:00.000Z",
+    "url": "https://www.notion.so/cad09ed0abb34731af7a5dfba78fd933",
+    "properties": {
+      "02Tags": {
+        "id": "%3D%3BsY",
+        "name": "02Tags",
+        "type": "multi_select"
+      },
+      "03Files": {
+        "id": "plsk",
+        "name": "03Files",
+        "type": "files"
+      },
+      "04Property": {
+        "id": "%7DSvQ",
+        "name": "04Property",
+        "type": "rich_text"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "dd1b10dc-0b39-47b1-a56a-e2700a0af24b",
+    "title": "documents_DB",
+    "created_time": "2022-04-25T01:36:00.000Z",
+    "last_edited_time": "2022-04-26T04:22:00.000Z",
+    "url": "https://www.notion.so/dd1b10dc0b3947b1a56ae2700a0af24b",
+    "properties": {
+      "02description": {
+        "id": "Fuqy",
+        "name": "02description",
+        "type": "rich_text"
+      },
+      "05source": {
+        "id": "sLdQ",
+        "name": "05source",
+        "type": "rich_text"
+      },
+      "03tags": {
+        "id": "t%5C%5CO",
+        "name": "03tags",
+        "type": "multi_select"
+      },
+      "04doctype": {
+        "id": "uQjc",
+        "name": "04doctype",
+        "type": "rich_text"
+      },
+      "01name": {
+        "id": "title",
+        "name": "01name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "6844e4cf-6842-430f-a430-224c0246fe67",
+    "title": "강좌사이트 Leture Sites",
+    "created_time": "2021-11-04T23:17:00.000Z",
+    "last_edited_time": "2022-04-26T04:21:00.000Z",
+    "url": "https://www.notion.so/6844e4cf6842430fa430224c0246fe67",
+    "properties": {
+      "02Tags": {
+        "id": "Nzy%7B",
+        "name": "02Tags",
+        "type": "multi_select"
+      },
+      "04ID": {
+        "id": "ZkCa",
+        "name": "04ID",
+        "type": "rich_text"
+      },
+      "06강좌": {
+        "id": "%5CE%3F%7C",
+        "name": "06강좌",
+        "type": "relation"
+      },
+      "07Remark": {
+        "id": "oZzM",
+        "name": "07Remark",
+        "type": "rich_text"
+      },
+      "09video": {
+        "id": "qMI%3F",
+        "name": "09video",
+        "type": "checkbox"
+      },
+      "03Url": {
+        "id": "s~%60U",
+        "name": "03Url",
+        "type": "url"
+      },
+      "08Grade": {
+        "id": "v%5CSU",
+        "name": "08Grade",
+        "type": "number"
+      },
+      "05PW": {
+        "id": "ypER",
+        "name": "05PW",
+        "type": "rich_text"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "705f89c0-4cec-4f2b-825a-329777d34612",
+    "title": "강좌 Lectures",
+    "created_time": "2021-11-04T23:17:00.000Z",
+    "last_edited_time": "2022-04-26T04:20:00.000Z",
+    "url": "https://www.notion.so/705f89c04cec4f2b825a329777d34612",
+    "properties": {
+      "09단위강의": {
+        "id": "%3E%5Dfg",
+        "name": "09단위강의",
+        "type": "relation"
+      },
+      "04Site": {
+        "id": "C%7DkC",
+        "name": "04Site",
+        "type": "relation"
+      },
+      "02Tags": {
+        "id": "U%3A%3Fx",
+        "name": "02Tags",
+        "type": "multi_select"
+      },
+      "08End": {
+        "id": "aU%3CC",
+        "name": "08End",
+        "type": "date"
+      },
+      "05Difficulty": {
+        "id": "dmuH",
+        "name": "05Difficulty",
+        "type": "number"
+      },
+      "07Start": {
+        "id": "mqup",
+        "name": "07Start",
+        "type": "date"
+      },
+      "03Url": {
+        "id": "mv%3EZ",
+        "name": "03Url",
+        "type": "url"
+      },
+      "06Proficiency": {
+        "id": "v%7Cbz",
+        "name": "06Proficiency",
+        "type": "number"
+      },
+      "01Name": {
+        "id": "title",
+        "name": "01Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "47d24d90-6cb0-4e3b-9b14-8d684ebeda90",
+    "title": "test_DB",
+    "created_time": "2022-04-24T00:15:00.000Z",
+    "last_edited_time": "2022-04-25T22:09:00.000Z",
+    "url": "https://www.notion.so/47d24d906cb04e3b9b148d684ebeda90",
+    "properties": {
+      "usage": {
+        "id": "%3EiW%3B",
+        "name": "usage",
+        "type": "multi_select"
+      },
+      "purchase_date": {
+        "id": "Dirg",
+        "name": "purchase_date",
+        "type": "date"
+      },
+      "remark": {
+        "id": "EGzw",
+        "name": "remark",
+        "type": "select"
+      },
+      "type": {
+        "id": "ScLy",
+        "name": "type",
+        "type": "rich_text"
+      },
+      "purchase_price": {
+        "id": "SyRS",
+        "name": "purchase_price",
+        "type": "number"
+      },
+      "built_date": {
+        "id": "%5DTSj",
+        "name": "built_date",
+        "type": "date"
+      },
+      "new": {
+        "id": "cVeo",
+        "name": "new",
+        "type": "checkbox"
+      },
+      "id_no": {
+        "id": "title",
+        "name": "id_no",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "50fa33b8-5185-4e93-9309-42bfa53d1278",
+    "title": "Clinical_Skill_DB",
+    "created_time": "2022-04-25T01:47:00.000Z",
+    "last_edited_time": "2022-04-25T01:47:00.000Z",
+    "url": "https://www.notion.so/50fa33b851854e93930942bfa53d1278",
+    "properties": {
+      "태그": {
+        "id": "m%7CkP",
+        "name": "태그",
+        "type": "multi_select"
+      },
+      "이름": {
+        "id": "title",
+        "name": "이름",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "2bbae40a-345d-4448-b7bc-a671e8128f65",
+    "title": "ebest_searches_DB",
+    "created_time": "2022-04-21T12:00:00.000Z",
+    "last_edited_time": "2022-04-23T12:08:00.000Z",
+    "url": "https://www.notion.so/2bbae40a345d4448b7bca671e8128f65",
+    "properties": {
+      "name": {
+        "id": "%3DHh%3E",
+        "name": "name",
+        "type": "rich_text"
+      },
+      "remark": {
+        "id": "AKAR",
+        "name": "remark",
+        "type": "rich_text"
+      },
+      "type": {
+        "id": "DUzN",
+        "name": "type",
+        "type": "rich_text"
+      },
+      "agency": {
+        "id": "Ecwa",
+        "name": "agency",
+        "type": "rich_text"
+      },
+      "st_buy": {
+        "id": "I%60ES",
+        "name": "st_buy",
+        "type": "rich_text"
+      },
+      "gap": {
+        "id": "O%5DDu",
+        "name": "gap",
+        "type": "rich_text"
+      },
+      "today": {
+        "id": "SjIx",
+        "name": "today",
+        "type": "rich_text"
+      },
+      "nicks": {
+        "id": "YrZW",
+        "name": "nicks",
+        "type": "rich_text"
+      },
+      "max": {
+        "id": "_%3F%3Fa",
+        "name": "max",
+        "type": "rich_text"
+      },
+      "unit": {
+        "id": "moq%60",
+        "name": "unit",
+        "type": "rich_text"
+      },
+      "weight": {
+        "id": "m%7C%7Be",
+        "name": "weight",
+        "type": "rich_text"
+      },
+      "buy_kwargs": {
+        "id": "p%3BC%3C",
+        "name": "buy_kwargs",
+        "type": "rich_text"
+      },
+      "sell_kwargs": {
+        "id": "u%5Dyo",
+        "name": "sell_kwargs",
+        "type": "rich_text"
+      },
+      "st_sell": {
+        "id": "vg~%60",
+        "name": "st_sell",
+        "type": "rich_text"
+      },
+      "use": {
+        "id": "~%5B%3Cq",
+        "name": "use",
+        "type": "rich_text"
+      },
+      "req_code": {
+        "id": "~%5B~Z",
+        "name": "req_code",
+        "type": "rich_text"
+      },
+      "code": {
+        "id": "title",
+        "name": "code",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "73b7830a-fb9e-41ce-98eb-747e7c87ef0d",
+    "title": "test_db",
+    "created_time": "2022-04-20T01:24:00.000Z",
+    "last_edited_time": "2022-04-23T12:06:00.000Z",
+    "url": "https://www.notion.so/73b7830afb9e41ce98eb747e7c87ef0d",
+    "properties": {
+      "Tags": {
+        "id": "%3DT%3DD",
+        "name": "Tags",
+        "type": "multi_select"
+      },
+      "number1": {
+        "id": "CQ%7Df",
+        "name": "number1",
+        "type": "number"
+      },
+      "phone1": {
+        "id": "C%7Bnl",
+        "name": "phone1",
+        "type": "phone_number"
+      },
+      "file1": {
+        "id": "GjR%40",
+        "name": "file1",
+        "type": "files"
+      },
+      "option1": {
+        "id": "JtkF",
+        "name": "option1",
+        "type": "select"
+      },
+      "email1": {
+        "id": "ZPG%40",
+        "name": "email1",
+        "type": "email"
+      },
+      "date1": {
+        "id": "Zlly",
+        "name": "date1",
+        "type": "date"
+      },
+      "checkbox1": {
+        "id": "ZpKV",
+        "name": "checkbox1",
+        "type": "checkbox"
+      },
+      "Property 1": {
+        "id": "%5C%3E%7BH",
+        "name": "Property 1",
+        "type": "rich_text"
+      },
+      "person1": {
+        "id": "oDN%7B",
+        "name": "person1",
+        "type": "people"
+      },
+      "url1": {
+        "id": "po~%3B",
+        "name": "url1",
+        "type": "url"
+      },
+      "Name": {
+        "id": "title",
+        "name": "Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "4bacd38a-9d06-47a9-bbe2-9964c1f25a0e",
+    "title": "pp_files_DB",
+    "created_time": "2022-04-22T02:53:00.000Z",
+    "last_edited_time": "2022-04-22T02:53:00.000Z",
+    "url": "https://www.notion.so/4bacd38a9d0647a9bbe29964c1f25a0e",
+    "properties": {
+      "first_line": {
+        "id": "%3BqIu",
+        "name": "first_line",
+        "type": "rich_text"
+      },
+      "description": {
+        "id": "RflV",
+        "name": "description",
+        "type": "rich_text"
+      },
+      "tags": {
+        "id": "SsJZ",
+        "name": "tags",
+        "type": "multi_select"
+      },
+      "category": {
+        "id": "u%5Boa",
+        "name": "category",
+        "type": "select"
+      },
+      "path": {
+        "id": "title",
+        "name": "path",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "08173b45-0834-43b8-b78e-3c1c1694404f",
+    "title": "pp_files_DB",
+    "created_time": "2022-04-22T01:53:00.000Z",
+    "last_edited_time": "2022-04-22T01:53:00.000Z",
+    "url": "https://www.notion.so/08173b45083443b8b78e3c1c1694404f",
+    "properties": {
+      "first_line": {
+        "id": "%3BqIu",
+        "name": "first_line",
+        "type": "rich_text"
+      },
+      "description": {
+        "id": "RflV",
+        "name": "description",
+        "type": "rich_text"
+      },
+      "tags": {
+        "id": "SsJZ",
+        "name": "tags",
+        "type": "multi_select"
+      },
+      "category": {
+        "id": "u%5Boa",
+        "name": "category",
+        "type": "select"
+      },
+      "path": {
+        "id": "title",
+        "name": "path",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "b577dcad-9d9f-4497-baac-6952f2936013",
+    "title": "db_mysql",
+    "created_time": "2022-04-20T13:20:00.000Z",
+    "last_edited_time": "2022-04-20T13:30:00.000Z",
+    "url": "https://www.notion.so/b577dcad9d9f4497baac6952f2936013",
+    "properties": {
+      "Usage": {
+        "id": "%40ZTV",
+        "name": "Usage",
+        "type": "rich_text"
+      },
+      "Remark": {
+        "id": "AWk%3D",
+        "name": "Remark",
+        "type": "rich_text"
+      },
+      "Key": {
+        "id": "BcUB",
+        "name": "Key",
+        "type": "select"
+      },
+      "Extra": {
+        "id": "OB%3Di",
+        "name": "Extra",
+        "type": "rich_text"
+      },
+      "Field": {
+        "id": "ULyi",
+        "name": "Field",
+        "type": "multi_select"
+      },
+      "Default": {
+        "id": "YQxv",
+        "name": "Default",
+        "type": "rich_text"
+      },
+      "Type": {
+        "id": "q%3CrX",
+        "name": "Type",
+        "type": "rich_text"
+      },
+      "Null": {
+        "id": "zvOs",
+        "name": "Null",
+        "type": "select"
+      },
+      "Table": {
+        "id": "title",
+        "name": "Table",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "554b7de6-1142-40b5-af7c-98eb1f828ba0",
+    "title": "db_notion",
+    "created_time": "2022-04-20T13:21:00.000Z",
+    "last_edited_time": "2022-04-20T13:23:00.000Z",
+    "url": "https://www.notion.so/554b7de6114240b5af7c98eb1f828ba0",
+    "properties": {
+      "schema_block_id": {
+        "id": "E%60~%3D",
+        "name": "schema_block_id",
+        "type": "rich_text"
+      },
+      "database_id": {
+        "id": "WWmv",
+        "name": "database_id",
+        "type": "multi_select"
+      },
+      "name": {
+        "id": "title",
+        "name": "name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "dffb7fb6-88ab-42a1-a8df-3df2c796f152",
+    "title": "database",
+    "created_time": "2022-04-20T13:18:00.000Z",
+    "last_edited_time": "2022-04-20T13:19:00.000Z",
+    "url": "https://www.notion.so/dffb7fb688ab42a1a8df3df2c796f152",
+    "properties": {
+      "db": {
+        "id": "%3D%3DEB",
+        "name": "db",
+        "type": "rich_text"
+      },
+      "port": {
+        "id": "AyvS",
+        "name": "port",
+        "type": "rich_text"
+      },
+      "server": {
+        "id": "%5DuT%3F",
+        "name": "server",
+        "type": "multi_select"
+      },
+      "ip": {
+        "id": "bL%40B",
+        "name": "ip",
+        "type": "rich_text"
+      },
+      "name": {
+        "id": "title",
+        "name": "name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "8d14e29f-e967-40e1-89b5-e2cb58ff0213",
+    "title": "server",
+    "created_time": "2022-04-20T13:17:00.000Z",
+    "last_edited_time": "2022-04-20T13:18:00.000Z",
+    "url": "https://www.notion.so/8d14e29fe96740e189b5e2cb58ff0213",
+    "properties": {
+      "태그": {
+        "id": "T%3Ac%7B",
+        "name": "태그",
+        "type": "multi_select"
+      },
+      "이름": {
+        "id": "title",
+        "name": "이름",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "4f73366b-786f-4e3c-b555-c31c58f01181",
+    "title": "local",
+    "created_time": "2022-04-20T13:17:00.000Z",
+    "last_edited_time": "2022-04-20T13:17:00.000Z",
+    "url": "https://www.notion.so/4f73366b786f4e3cb555c31c58f01181",
+    "properties": {
+      "태그": {
+        "id": "q~dl",
+        "name": "태그",
+        "type": "multi_select"
+      },
+      "이름": {
+        "id": "title",
+        "name": "이름",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "a5ed81fa-aaf2-43dd-a509-b6e1c22eb6b0",
+    "title": "notion",
+    "created_time": "2022-04-20T13:11:00.000Z",
+    "last_edited_time": "2022-04-20T13:17:00.000Z",
+    "url": "https://www.notion.so/a5ed81faaaf243dda509b6e1c22eb6b0",
+    "properties": {
+      "local_var": {
+        "id": "Cmw%5B",
+        "name": "local_var",
+        "type": "rich_text"
+      },
+      "database_id": {
+        "id": "eak~",
+        "name": "database_id",
+        "type": "rich_text"
+      },
+      "period": {
+        "id": "smI%3A",
+        "name": "period",
+        "type": "rich_text"
+      },
+      "local_path": {
+        "id": "wJvo",
+        "name": "local_path",
+        "type": "rich_text"
+      },
+      "name": {
+        "id": "title",
+        "name": "name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "3c6fe3f3-365b-4fbb-9a06-c295e74bf0f3",
+    "title": "xa_requests",
+    "created_time": "2022-04-20T13:02:00.000Z",
+    "last_edited_time": "2022-04-20T13:03:00.000Z",
+    "url": "https://www.notion.so/3c6fe3f3365b4fbb9a06c295e74bf0f3",
+    "properties": {
+      "태그": {
+        "id": "mge%3F",
+        "name": "태그",
+        "type": "multi_select"
+      },
+      "이름": {
+        "id": "title",
+        "name": "이름",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "ec12d912-304d-4b07-a6bd-15874cc1782b",
+    "title": "searches",
+    "created_time": "2022-04-20T11:53:00.000Z",
+    "last_edited_time": "2022-04-20T11:53:00.000Z",
+    "url": "https://www.notion.so/ec12d912304d4b07a6bd15874cc1782b",
+    "properties": {
+      "태그": {
+        "id": "%3DO%3DX",
+        "name": "태그",
+        "type": "multi_select"
+      },
+      "이름": {
+        "id": "title",
+        "name": "이름",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "5d73092e-d960-41fb-a5dd-a2d07f511ca1",
+    "title": "orders",
+    "created_time": "2022-04-20T01:02:00.000Z",
+    "last_edited_time": "2022-04-20T01:02:00.000Z",
+    "url": "https://www.notion.so/5d73092ed96041fba5dda2d07f511ca1",
+    "properties": {
+      "Tags": {
+        "id": "STWw",
+        "name": "Tags",
+        "type": "multi_select"
+      },
+      "Name": {
+        "id": "title",
+        "name": "Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "156064fd-7192-4bca-bf78-abf28f9aaa50",
+    "title": "codes",
+    "created_time": "2022-04-19T22:33:00.000Z",
+    "last_edited_time": "2022-04-19T22:33:00.000Z",
+    "url": "https://www.notion.so/156064fd71924bcabf78abf28f9aaa50",
+    "properties": {
+      "Tags": {
+        "id": "LV%7CL",
+        "name": "Tags",
+        "type": "multi_select"
+      },
+      "Name": {
+        "id": "title",
+        "name": "Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "5647d6f5-fd5e-4da4-ba29-c6c544ef674c",
+    "title": "requests",
+    "created_time": "2022-04-19T22:32:00.000Z",
+    "last_edited_time": "2022-04-19T22:32:00.000Z",
+    "url": "https://www.notion.so/5647d6f5fd5e4da4ba29c6c544ef674c",
+    "properties": {
+      "Tags": {
+        "id": "oqcu",
+        "name": "Tags",
+        "type": "multi_select"
+      },
+      "Name": {
+        "id": "title",
+        "name": "Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "fa37887e-5387-4068-9d51-0df92e41d1c8",
+    "title": "strategies",
+    "created_time": "2022-04-19T22:31:00.000Z",
+    "last_edited_time": "2022-04-19T22:31:00.000Z",
+    "url": "https://www.notion.so/fa37887e538740689d510df92e41d1c8",
+    "properties": {
+      "Tags": {
+        "id": "%3Fjg%5B",
+        "name": "Tags",
+        "type": "multi_select"
+      },
+      "Name": {
+        "id": "title",
+        "name": "Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "0b703eb4-b002-4df7-aa25-980cdde1e8b1",
+    "title": "apis",
+    "created_time": "2022-04-19T22:31:00.000Z",
+    "last_edited_time": "2022-04-19T22:31:00.000Z",
+    "url": "https://www.notion.so/0b703eb4b0024df7aa25980cdde1e8b1",
+    "properties": {
+      "Tags": {
+        "id": "QSLE",
+        "name": "Tags",
+        "type": "multi_select"
+      },
+      "Name": {
+        "id": "title",
+        "name": "Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "d7b9291d-cf29-4213-be0a-5c5dc3f4165c",
+    "title": "modules",
+    "created_time": "2022-04-15T10:09:00.000Z",
+    "last_edited_time": "2022-04-15T10:14:00.000Z",
+    "url": "https://www.notion.so/d7b9291dcf294213be0a5c5dc3f4165c",
+    "properties": {
+      "import": {
+        "id": "_%5C%60P",
+        "name": "import",
+        "type": "rich_text"
+      },
+      "Tags": {
+        "id": "d%3F%7CC",
+        "name": "Tags",
+        "type": "multi_select"
+      },
+      "Property": {
+        "id": "te%7B%5C",
+        "name": "Property",
+        "type": "rich_text"
+      },
+      "Name": {
+        "id": "title",
+        "name": "Name",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "eaf84377-cfdc-43ac-b2ad-d34bda7607db",
+    "title": "",
+    "created_time": "2022-04-09T01:52:00.000Z",
+    "last_edited_time": "2022-04-09T01:52:00.000Z",
+    "url": "https://www.notion.so/eaf84377cfdc43acb2add34bda7607db",
+    "properties": {
+      "meaning": {
+        "id": "VqZC",
+        "name": "meaning",
+        "type": "rich_text"
+      },
+      "inline flag": {
+        "id": "h_r%5E",
+        "name": "inline flag",
+        "type": "rich_text"
+      },
+      "long syntax": {
+        "id": "ps%40X",
+        "name": "long syntax",
+        "type": "rich_text"
+      },
+      "syntax": {
+        "id": "title",
+        "name": "syntax",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "a0475644-8120-4d42-b94c-3fe223c5e70b",
+    "title": "",
+    "created_time": "2021-11-15T13:57:00.000Z",
+    "last_edited_time": "2021-11-15T13:57:00.000Z",
+    "url": "https://www.notion.so/a047564481204d42b94c3fe223c5e70b",
+    "properties": {
+      "(you can write whatever you want)": {
+        "id": "qF%7Dg",
+        "name": "(you can write whatever you want)",
+        "type": "rich_text"
+      },
+      "Name:": {
+        "id": "title",
+        "name": "Name:",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "584b8047-1b69-4f98-920a-d362d1ab7fb7",
+    "title": "",
+    "created_time": "2021-11-15T13:57:00.000Z",
+    "last_edited_time": "2021-11-15T13:57:00.000Z",
+    "url": "https://www.notion.so/584b80471b694f98920ad362d1ab7fb7",
+    "properties": {
+      "22": {
+        "id": "UCef",
+        "name": "22",
+        "type": "rich_text"
+      },
+      "Port:": {
+        "id": "title",
+        "name": "Port:",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "fa8b35ec-4947-459b-a521-76d78fa7ed81",
+    "title": "",
+    "created_time": "2021-11-15T13:57:00.000Z",
+    "last_edited_time": "2021-11-15T13:57:00.000Z",
+    "url": "https://www.notion.so/fa8b35ec4947459ba52176d78fa7ed81",
+    "properties": {
+      "your PythonAnywhere database hostname, eg. yourusername.mysql.pythonanywhere-services.com": {
+        "id": "VZ%7Dg",
+        "name": "your PythonAnywhere database hostname, eg. yourusername.mysql.pythonanywhere-services.com",
+        "type": "rich_text"
+      },
+      "Host:": {
+        "id": "title",
+        "name": "Host:",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "c622dae7-0710-4c94-9d02-17b24e864502",
+    "title": "",
+    "created_time": "2021-11-15T13:57:00.000Z",
+    "last_edited_time": "2021-11-15T13:57:00.000Z",
+    "url": "https://www.notion.so/c622dae707104c949d0217b24e864502",
+    "properties": {
+      "your PythonAnywhere db hostname (username.mysql.eu.pythonanywhere-services.com or username.mysql.pythonanywhere-services.com)": {
+        "id": "Mi%3FY",
+        "name": "your PythonAnywhere db hostname (username.mysql.eu.pythonanywhere-services.com or username.mysql.pythonanywhere-services.com)",
+        "type": "rich_text"
+      },
+      "Server Host:": {
+        "id": "title",
+        "name": "Server Host:",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "0fd39acf-4cfa-4bcb-bb93-aa9c2ff4d2c3",
+    "title": "",
+    "created_time": "2021-11-15T13:57:00.000Z",
+    "last_edited_time": "2021-11-15T13:57:00.000Z",
+    "url": "https://www.notion.so/0fd39acf4cfa4bcbbb93aa9c2ff4d2c3",
+    "properties": {
+      "your SSH hostname (ssh.eu.pythonanywhere.com or ssh.pythonanywhere.com)": {
+        "id": "ayW%3A",
+        "name": "your SSH hostname (ssh.eu.pythonanywhere.com or ssh.pythonanywhere.com)",
+        "type": "rich_text"
+      },
+      "Host/IP:": {
+        "id": "title",
+        "name": "Host/IP:",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "e0f5922e-baf6-4c3a-b6a3-b086faeddaea",
+    "title": "",
+    "created_time": "2021-11-15T13:57:00.000Z",
+    "last_edited_time": "2021-11-15T13:57:00.000Z",
+    "url": "https://www.notion.so/e0f5922ebaf64c3ab6a3b086faeddaea",
+    "properties": {
+      "your SSH hostname": {
+        "id": "zd%3B%5B",
+        "name": "your SSH hostname",
+        "type": "rich_text"
+      },
+      "SSH Hostname:": {
+        "id": "title",
+        "name": "SSH Hostname:",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "0b682bdc-d5cc-4d38-ac34-f6de75beaab6",
+    "title": "",
+    "created_time": "2021-11-15T13:57:00.000Z",
+    "last_edited_time": "2021-11-15T13:57:00.000Z",
+    "url": "https://www.notion.so/0b682bdcd5cc4d38ac34f6de75beaab6",
+    "properties": {
+      "ssh.pythonanywhere.com": {
+        "id": "CIQA",
+        "name": "ssh.pythonanywhere.com",
+        "type": "url"
+      },
+      "username.mysql.pythonanywhere-services.com": {
+        "id": "%7CJLm",
+        "name": "username.mysql.pythonanywhere-services.com",
+        "type": "url"
+      },
+      "Global-US": {
+        "id": "title",
+        "name": "Global-US",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "1a0ea183-fb1e-4df6-8d8b-30b9f20b9273",
+    "title": "",
+    "created_time": "2021-11-09T14:26:00.000Z",
+    "last_edited_time": "2021-11-09T14:26:00.000Z",
+    "url": "https://www.notion.so/1a0ea183fb1e4df68d8b30b9f20b9273",
+    "properties": {
+      "Example": {
+        "id": "%5EE%3BI",
+        "name": "Example",
+        "type": "rich_text"
+      },
+      "Title": {
+        "id": "title",
+        "name": "Title",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "ee89fee4-47da-41ea-8c5d-12ca5bb362fc",
+    "title": "",
+    "created_time": "2021-11-08T00:11:00.000Z",
+    "last_edited_time": "2021-11-08T00:11:00.000Z",
+    "url": "https://www.notion.so/ee89fee447da41ea8c5d12ca5bb362fc",
+    "properties": {
+      "True": {
+        "id": "FQAB",
+        "name": "True",
+        "type": "checkbox"
+      },
+      "True 2": {
+        "id": "OQP~",
+        "name": "True 2",
+        "type": "checkbox"
+      },
+      "True 1": {
+        "id": "%7B%7D%5CC",
+        "name": "True 1",
+        "type": "checkbox"
+      },
+      "Title": {
+        "id": "title",
+        "name": "Title",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "1e5635c2-1f32-4e74-ad74-da053103f180",
+    "title": "",
+    "created_time": "2021-11-08T00:11:00.000Z",
+    "last_edited_time": "2021-11-08T00:11:00.000Z",
+    "url": "https://www.notion.so/1e5635c21f324e74ad74da053103f180",
+    "properties": {
+      "True": {
+        "id": "%3AqhR",
+        "name": "True",
+        "type": "checkbox"
+      },
+      "True 2": {
+        "id": "HTGJ",
+        "name": "True 2",
+        "type": "checkbox"
+      },
+      "True 1": {
+        "id": "N_x%5C",
+        "name": "True 1",
+        "type": "checkbox"
+      },
+      "Title": {
+        "id": "title",
+        "name": "Title",
+        "type": "title"
+      }
+    }
+  },
+  {
+    "id": "5d29e57e-2f05-4eb0-aac1-88060c7f611b",
+    "title": "",
+    "created_time": "2021-11-06T04:53:00.000Z",
+    "last_edited_time": "2021-11-06T04:56:00.000Z",
+    "url": "https://www.notion.so/5d29e57e2f054eb0aac188060c7f611b",
+    "properties": {
+      "Underlying identifier for the property. This identifier is guaranteed to remain constant when the property name changes. It may be a UUID, but is often a short random string. The id may be used in place of name when creating or updating pages.": {
+        "id": "%40V%3Ci",
+        "name": "Underlying identifier for the property. This identifier is guaranteed to remain constant when the property name changes. It may be a UUID, but is often a short random string. The id may be used in place of name when creating or updating pages.",
+        "type": "rich_text"
+      },
+      "string": {
+        "id": "Z~%7BT",
+        "name": "string",
+        "type": "rich_text"
+      },
+      "id": {
+        "id": "%60%40ZD",
+        "name": "id",
+        "type": "rich_text"
+      },
+      "\"f%5C%5C%3Ap\"": {
+        "id": "j%5C%7Cy",
+        "name": "\"f%5C%5C%3Ap\"",
+        "type": "rich_text"
+      },
+      "Title": {
+        "id": "title",
+        "name": "Title",
+        "type": "title"
+      }
+    }
+  }
+]
