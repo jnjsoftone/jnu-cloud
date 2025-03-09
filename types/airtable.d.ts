@@ -21,41 +21,41 @@ interface Record<T extends FieldSet = FieldSet> {
 /**
  * Airtable 클라이언트 초기화
  */
-declare const initAirtable: (config: AirtableConfig) => any;
+declare const initAirtable: (config: AirtableConfig) => import("airtable/lib/airtable_base").AirtableBase;
 /**
  * Airtable base 가져오기
  */
-declare const getBase: () => any;
+declare const getBase: () => import("airtable/lib/airtable_base").AirtableBase;
 /**
  * 테이블의 모든 레코드 조회
  */
-declare const selectAll: <T extends FieldSet = FieldSet>(tableName: string, options?: QueryOptions) => Promise<Record<T>[]>;
+declare const selectAll: <T extends import("airtable/lib/field_set").FieldSet = import("airtable/lib/field_set").FieldSet>(tableName: string, options?: QueryOptions) => Promise<Record<T>[]>;
 /**
  * 단일 레코드 조회
  */
-declare const selectOne: <T extends FieldSet = FieldSet>(tableName: string, recordId: string) => Promise<{
-    id: any;
+declare const selectOne: <T extends import("airtable/lib/field_set").FieldSet = import("airtable/lib/field_set").FieldSet>(tableName: string, recordId: string) => Promise<{
+    id: string;
     fields: T;
 }>;
 /**
  * 레코드 생성
  */
-declare const insert: <T extends FieldSet = FieldSet>(tableName: string, records: Record<T> | Record<T>[]) => Promise<Record<T>[]>;
+declare const insert: <T extends import("airtable/lib/field_set").FieldSet = import("airtable/lib/field_set").FieldSet>(tableName: string, records: Record<T> | Record<T>[]) => Promise<Record<T>[]>;
 /**
  * 레코드 수정
  */
-declare const update: <T extends FieldSet = FieldSet>(tableName: string, records: Record<T> | Record<T>[]) => Promise<Record<T>[]>;
+declare const update: <T extends import("airtable/lib/field_set").FieldSet = import("airtable/lib/field_set").FieldSet>(tableName: string, records: Record<T> | Record<T>[]) => Promise<Record<T>[]>;
 /**
  * 레코드 삭제
  */
-declare const remove: <T extends FieldSet = FieldSet>(tableName: string, recordIds: string | string[]) => Promise<Record<T>[]>;
+declare const remove: <T extends import("airtable/lib/field_set").FieldSet = import("airtable/lib/field_set").FieldSet>(tableName: string, recordIds: string | string[]) => Promise<Record<T>[]>;
 /**
  * 레코드 upsert (insert or update)
  */
-declare const upsert: <T extends FieldSet = FieldSet>(tableName: string, records: Record<T> | Record<T>[], keyField: keyof T) => Promise<Record<T>[]>;
+declare const upsert: <T extends import("airtable/lib/field_set").FieldSet = import("airtable/lib/field_set").FieldSet>(tableName: string, records: Record<T> | Record<T>[], keyField: keyof T) => Promise<Record<T>[]>;
 /**
  * 레코드 replace (delete and insert)
  */
-declare const replace: <T extends FieldSet = FieldSet>(tableName: string, records: Record<T> | Record<T>[]) => Promise<Record<T>[]>;
+declare const replace: <T extends import("airtable/lib/field_set").FieldSet = import("airtable/lib/field_set").FieldSet>(tableName: string, records: Record<T> | Record<T>[]) => Promise<Record<T>[]>;
 export { initAirtable, getBase, selectAll, selectOne, insert, update, remove, upsert, replace, type AirtableConfig, type QueryOptions, type Record, };
 //# sourceMappingURL=airtable.d.ts.map
