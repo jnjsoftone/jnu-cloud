@@ -1,6 +1,6 @@
 import * as dotenv from 'dotenv';
 import fs from 'fs';
-import * as Path from 'path';
+import path from 'path';
 dotenv.config();
 
 interface GithubConfig {
@@ -42,7 +42,7 @@ const decodeContent = (content: string): string => {
 
 // JSON 파일 업로드/업데이트
 const uploadJsonToGithub = async <T>(
-  filePath: string,
+  path: string,
   content: T,
   githubConfig: GithubConfig,
   message: string = 'Update JSON file'
@@ -52,7 +52,7 @@ const uploadJsonToGithub = async <T>(
     let sha: string | undefined;
     try {
       const existingFile = await fetch(
-        `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${filePath}`,
+        `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${path}`,
         {
           headers: {
             Authorization: `token ${githubConfig.token}`,
@@ -70,7 +70,7 @@ const uploadJsonToGithub = async <T>(
 
     // 파일 업로드/업데이트
     const response = await fetch(
-      `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${filePath}`,
+      `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${path}`,
       {
         method: 'PUT',
         headers: {
@@ -97,10 +97,10 @@ const uploadJsonToGithub = async <T>(
 };
 
 // JSON 파일 읽기
-const readJsonFromGithub = async <T>(filePath: string, githubConfig: GithubConfig): Promise<T> => {
+const readJsonFromGithub = async <T>(path: string, githubConfig: GithubConfig): Promise<T> => {
   try {
     const response = await fetch(
-      `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${filePath}`,
+      `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${path}`,
       {
         headers: {
           Authorization: `token ${githubConfig.token}`,
@@ -123,10 +123,10 @@ const readJsonFromGithub = async <T>(filePath: string, githubConfig: GithubConfi
 };
 
 // 디렉토리 내 파일 목록 조회
-const listFilesInDirectory = async (dirPath: string = '', githubConfig: GithubConfig): Promise<GithubFile[]> => {
+const listFilesInDirectory = async (path: string = '', githubConfig: GithubConfig): Promise<GithubFile[]> => {
   try {
     const response = await fetch(
-      `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${dirPath}`,
+      `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${path}`,
       {
         headers: {
           Authorization: `token ${githubConfig.token}`,
@@ -149,14 +149,14 @@ const listFilesInDirectory = async (dirPath: string = '', githubConfig: GithubCo
 
 // 파일 삭제
 const deleteFileFromGithub = async (
-  filePath: string,
+  path: string,
   githubConfig: GithubConfig,
   message: string = 'Delete file'
 ): Promise<GithubResponse> => {
   try {
     // 먼저 파일의 SHA 값을 얻음
     const fileResponse = await fetch(
-      `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${filePath}`,
+      `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${path}`,
       {
         headers: {
           Authorization: `token ${githubConfig.token}`,
@@ -173,7 +173,7 @@ const deleteFileFromGithub = async (
 
     // 파일 삭제 요청
     const response = await fetch(
-      `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${filePath}`,
+      `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${path}`,
       {
         method: 'DELETE',
         headers: {
@@ -224,7 +224,7 @@ const copyFolderToLocal = async (srcFolder: string, dstFolder: string, githubCon
       const items = (await response.json()) as GithubFile[];
 
       for (const item of items) {
-        const localPath = Path.join(dstFolder, item.path.replace(srcFolder, ''));
+        const localPath = path.join(dstFolder, item.path.replace(srcFolder, ''));
 
         if (item.type === 'dir') {
           // 디렉토리인 경우 재귀적으로 처리
