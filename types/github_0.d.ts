@@ -20,10 +20,10 @@ interface GithubFile {
     download_url: string;
     [key: string]: any;
 }
-declare const uploadJsonToGithub: <T>(filePath: string, content: T, githubConfig: GithubConfig, message?: string) => Promise<GithubResponse>;
-declare const readJsonFromGithub: <T>(filePath: string, githubConfig: GithubConfig) => Promise<T>;
-declare const listFilesInDirectory: (dirPath: string | undefined, githubConfig: GithubConfig) => Promise<GithubFile[]>;
-declare const deleteFileFromGithub: (filePath: string, githubConfig: GithubConfig, message?: string) => Promise<GithubResponse>;
+declare const uploadJsonToGithub: <T>(path: string, content: T, githubConfig: GithubConfig, message?: string) => Promise<GithubResponse>;
+declare const readJsonFromGithub: <T>(path: string, githubConfig: GithubConfig) => Promise<T>;
+declare const listFilesInDirectory: (path: string | undefined, githubConfig: GithubConfig) => Promise<GithubFile[]>;
+declare const deleteFileFromGithub: (path: string, githubConfig: GithubConfig, message?: string) => Promise<GithubResponse>;
 declare const copyFolderToLocal: (srcFolder: string, dstFolder: string, githubConfig: GithubConfig) => Promise<void>;
 export { uploadJsonToGithub, readJsonFromGithub, listFilesInDirectory, deleteFileFromGithub, copyFolderToLocal, type GithubConfig, };
-//# sourceMappingURL=github.d.ts.map
+//# sourceMappingURL=github_0.d.ts.map
