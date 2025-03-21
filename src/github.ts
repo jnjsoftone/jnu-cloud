@@ -47,12 +47,15 @@ const uploadJsonToGithub = async <T>(
   githubConfig: GithubConfig,
   message: string = 'Update JSON file'
 ): Promise<GithubResponse> => {
+  const srcUrl = `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${filePath}`;
+  console.log(`@@@@ uploadJsonToGithub srcUrl: ${srcUrl}`);
+
   try {
     // 먼저 파일이 존재하는지 확인 (SHA 값을 얻기 위해)
     let sha: string | undefined;
     try {
       const existingFile = await fetch(
-        `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${filePath}`,
+        srcUrl,
         {
           headers: {
             Authorization: `token ${githubConfig.token}`,
@@ -70,7 +73,7 @@ const uploadJsonToGithub = async <T>(
 
     // 파일 업로드/업데이트
     const response = await fetch(
-      `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${filePath}`,
+      srcUrl,
       {
         method: 'PUT',
         headers: {
@@ -207,8 +210,10 @@ const copyFolderToLocal = async (srcFolder: string, dstFolder: string, githubCon
     }
 
     const fetchContents = async (currentPath: string) => {
+      const srcUrl = `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${currentPath}`
+      console.log(`copyFolderToLocal srcUrl: ${srcUrl}`)
       const response = await fetch(
-        `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${currentPath}`,
+        srcUrl,
         {
           headers: {
             Authorization: `token ${githubConfig.token}`,
