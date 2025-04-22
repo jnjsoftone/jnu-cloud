@@ -4,6 +4,8 @@ export {
   listFilesInDirectory,
   deleteFileFromGithub,
   copyFolderToLocal,
+  loadJsonFromGithub,
+  saveJsonToGithub
 } from './github.js';
 
 export {
