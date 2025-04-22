@@ -184,6 +184,8 @@ const copyFolderToLocal = async (srcFolder, dstFolder) => {
     }
 
     const fetchContents = async (currentPath) => {
+      console.log(`${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${currentPath}`);
+
       const response = await fetch(
         `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${currentPath}`,
         {
@@ -233,4 +235,4 @@ export { uploadJsonToGithub, readJsonFromGithub, listFilesInDirectory, deleteFil
 
 // readJsonFromGithub('Apis/github.json').then(console.log);
 
-await copyFolderToLocal('Apis', 'Apis');
+await copyFolderToLocal('Templates/ts-swc-simple', 'repo');

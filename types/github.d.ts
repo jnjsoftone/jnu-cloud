@@ -25,5 +25,6 @@ declare const readJsonFromGithub: <T>(filePath: string, githubConfig: GithubConf
 declare const listFilesInDirectory: (dirPath: string | undefined, githubConfig: GithubConfig) => Promise<GithubFile[]>;
 declare const deleteFileFromGithub: (filePath: string, githubConfig: GithubConfig, message?: string) => Promise<GithubResponse>;
 declare const copyFolderToLocal: (srcFolder: string, dstFolder: string, githubConfig: GithubConfig) => Promise<void>;
-export { uploadJsonToGithub, readJsonFromGithub, listFilesInDirectory, deleteFileFromGithub, copyFolderToLocal, type GithubConfig, };
+declare const saveJsonToGithub: <T>(filePath: string, content: T, githubConfig: GithubConfig, message?: string) => Promise<GithubResponse>;
+export { uploadJsonToGithub, readJsonFromGithub, listFilesInDirectory, deleteFileFromGithub, copyFolderToLocal, saveJsonToGithub, type GithubConfig, };
 //# sourceMappingURL=github.d.ts.map

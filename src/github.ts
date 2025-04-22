@@ -257,11 +257,71 @@ const copyFolderToLocal = async (srcFolder: string, dstFolder: string, githubCon
   }
 };
 
+// GitHub에 JSON 파일 저장
+const saveJsonToGithub = async <T>(
+  filePath: string,
+  content: T,
+  githubConfig: GithubConfig,
+  message: string = 'Save JSON file'
+): Promise<GithubResponse> => {
+  const srcUrl = `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${filePath}`;
+  console.log(`@@@@ saveJsonToGithub srcUrl: ${srcUrl}`);
+
+  try {
+    // 먼저 파일이 존재하는지 확인 (SHA 값을 얻기 위해)
+    let sha: string | undefined;
+    try {
+      const existingFile = await fetch(
+        srcUrl,
+        {
+          headers: {
+            Authorization: `token ${githubConfig.token}`,
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+      if (existingFile.ok) {
+        const data = (await existingFile.json()) as GithubResponse;
+        sha = data.sha;
+      }
+    } catch (error) {
+      // 파일이 없는 경우 무시
+    }
+
+    // 파일 업로드/업데이트
+    const response = await fetch(
+      srcUrl,
+      {
+        method: 'PUT',
+        headers: {
+          Authorization: `token ${githubConfig.token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message,
+          content: encodeContent(JSON.stringify(content, null, 2)),
+          sha, // 파일이 존재하는 경우에만 SHA 포함
+        }),
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(`GitHub API error: ${response.statusText}`);
+    }
+
+    return (await response.json()) as GithubResponse;
+  } catch (error) {
+    console.error('Error saving to GitHub:', error);
+    throw error;
+  }
+};
+
 export {
   uploadJsonToGithub,
   readJsonFromGithub,
   listFilesInDirectory,
   deleteFileFromGithub,
   copyFolderToLocal,
+  saveJsonToGithub,
   type GithubConfig,
 };
