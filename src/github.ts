@@ -100,7 +100,7 @@ const uploadJsonToGithub = async <T>(
 };
 
 // JSON 파일 읽기
-const readJsonFromGithub = async <T>(filePath: string, githubConfig: GithubConfig): Promise<T> => {
+const readJsonFromGithub = async <T>(filePath: string, githubConfig: GithubConfig): Promise<T | null> => {
   try {
     const response = await fetch(
       `${ENV_GITHUB_API_URL}/repos/${githubConfig.owner}/${githubConfig.repo}/contents/${filePath}`,
@@ -113,15 +113,17 @@ const readJsonFromGithub = async <T>(filePath: string, githubConfig: GithubConfi
     );
 
     if (!response.ok) {
-      throw new Error(`GitHub API error: ${response.statusText}`);
+      // throw new Error(`GitHub API error: ${response.statusText}`);
+      return null
     }
 
     const data = (await response.json()) as GithubResponse;
     const content = decodeContent(data.content);
     return JSON.parse(content);
   } catch (error) {
-    console.error('Error reading from GitHub:', error);
-    throw error;
+    // console.error('Error reading from GitHub:', error);
+    // throw error;
+    return null
   }
 };
 
@@ -262,7 +264,7 @@ const loadJsonFromGithub = async <T>(
   filePath: string,
   githubConfig: GithubConfig,
   message: string = 'Load JSON file'
-): Promise<GithubResponse> => {
+): Promise<T | null> => {
   return readJsonFromGithub(filePath, githubConfig)
 };
 
